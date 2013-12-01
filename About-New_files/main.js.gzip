@@ -1,0 +1,175 @@
+/* Author: David Massiani
+
+*/
+function isValidEmailAddress(emailAddress) {
+    var pattern = new RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);
+    return pattern.test(emailAddress);
+};
+
+$(document).ready(function(){
+
+    //$('.banner').css('position','fixed');
+
+	$('#blason a').on('click',function(){
+		$('html, body').animate({scrollTop: $('#hello').offset().top}, 300);
+		return false;
+	})
+
+	$('#hello').waypoint(function(direction) {
+
+	  if( direction === 'down'){
+            $('header.banner').animate({'top':'0'}, 300);
+            $('.wrap.blason').animate({'top': '-90'},300);
+            $('#top').show().animate({'bottom':'0'}, 300);
+	  }else{
+            $('header.banner').animate({'top':'-90'}, 300);
+            $('.wrap.blason').animate({'top': '0'}, 300);
+            $('#top').show().animate({'bottom':'-50'}, 300);
+	  }
+
+	});
+
+	$('#top').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+
+	$('header nav').meanmenu();
+
+	// homepage submit email :
+	$('form#form-contact').on('submit',function(){
+		if( !isValidEmailAddress( $('#schmilblick').val() ) ) { 
+
+			$('#form-contact').prepend('<div class="alert"><button type="button" class="close" data-dismiss="alert">&times;</button><strong>Warning!</strong> Merci de vérifier votre email.</div>');
+
+		}else{
+			$.ajax({
+		         type : "post",
+		         dataType : "html",
+		         url :  'http://www.davidmassiani.com/wp-admin/admin-ajax.php',
+		         data : {"action" : "email_homepage", "d" : $('#schmilblick').val()}
+		      }).done(function( msg ) {
+
+					$('#form-contact input,#form-contact button').fadeOut('fast',function(){
+						$(this).remove();
+					});
+					$('#form-contact').append('<p>Promis.</p>');
+				});
+				$('a.suggestion').parent().remove();
+		}
+		return false;
+	})
+
+	$('#schmilblick').on('blur', function() {
+	  $(this).mailcheck({
+	    suggested: function(element, suggestion) {
+	      	$full = suggestion.full;
+	      	if($('a.suggestion').length != 0){
+	  			$('a.suggestion').parent().remove();
+	  		}
+	    	$('#form-contact button').after('<p>Vouliez-vous écrire : <a href="#" class="suggestion">' + $full + '</a> ?</p>');
+	    },
+	    empty: function(element) {}
+	  });
+	});
+
+	// si suggestion de l'email alors au clique on remplace l'email :
+	$('#form-contact').on('click','a.suggestion',function(){
+		$('#schmilblick').val($full);
+		$('a.suggestion').parent().fadeOut('fast',function(){
+			$(this).remove();
+		});
+		return false;
+	})
+
+
+	$('form#contact-form').on('submit',function(){
+
+		$error = false;
+
+		$('#contact-form p').remove();
+
+		// test de l'email :
+		if( !isValidEmailAddress( $('#email').val() ) ) { 
+
+			$('#contact-form').prepend('<p>Merci de vérifier votre email.</p>');
+			$error = true;
+
+		}
+
+		// test du nom :
+		if(!$('#name').val()){
+
+			$('#contact-form').prepend('<p>Merci de vérifier votre nom.</p>');
+			$error = true;
+
+		}
+
+		// test du nom :
+		if(!$('#message').val()){
+
+			$('#contact-form').prepend('<p>Merci de vérifier votre message.</p>');
+			$error = true;
+
+		}
+
+		if($error == false){
+			$.ajax({
+		         type : "post",
+		         dataType : "html",
+		         url :  'http://www.davidmassiani.com/wp-admin/admin-ajax.php',
+		         data : {"action" : "email_contact", "d" : $('#email').val(), 'n' : $('#name').val(), 'm' : $('#message').val()}
+		      }).done(function( msg ) {
+
+					$('#contact-form').slideUp('fast',function(){
+						$(this).remove();
+						$('.container.main div.span6').append('<p>Je vous recontacte rapidement.</p>');
+					});
+				});
+		}
+		return false;
+	})
+
+})
+
+// traduction pour parleys :
+window.ParsleyConfig = window.ParsleyConfig || {};
+
+(function ($) {
+  window.ParsleyConfig = $.extend( true, {}, window.ParsleyConfig, {
+    messages: {
+      // parsley //////////////////////////////////////
+        defaultMessage: "Cette valeur semble non valide."
+      , type: {
+            email:      "Cette valeur n'est pas une adresse email valide."
+          , url:        "Cette valeur n'est pas une URL valide."
+          , urlstrict:  "Cette valeur n'est pas une URL valide."
+          , number:     "Cette valeur doit être un nombre."
+          , digits:     "Cette valeur doit être numérique."
+          , dateIso:    "Cette valeur n'est pas une date valide (YYYY-MM-DD)."
+          , alphanum:   "Cette valeur doit être alphanumérique."
+        }
+      , notnull:        "Cette valeur ne peut pas être nulle."
+      , notblank:       "Cette valeur ne peut pas être vide."
+      , required:       "Ce champ est requis."
+      , regexp:         "Cette valeur semble non valide."
+      , min:            "Cette valeur ne doit pas être inféreure à %s."
+      , max:            "Cette valeur ne doit pas excéder %s."
+      , range:          "Cette valeur doit être comprise entre %s et %s."
+      , minlength:      "Cette chaîne est trop courte. Elle doit avoir au minimum %s caractères."
+      , maxlength:      "Cette chaîne est trop longue. Elle doit avoir au maximum %s caractères."
+      , rangelength:    "Cette valeur doit contenir entre %s et %s caractères."
+      , equalto:        "Cette valeur devrait être identique."
+      , mincheck:       "Vous devez sélectionner au moins %s choix."
+      , maxcheck:       "Vous devez sélectionner %s choix maximum."
+      , rangecheck:     "Vous devez sélectionner entre %s et %s choix."
+
+      // parsley.extend ///////////////////////////////
+      , minwords:       "Cette valeur doit contenir plus de %s mots."
+      , maxwords:       "Cette valeur ne peut pas dépasser %s mots."
+      , rangewords:     "Cette valeur doit comprendre %s à %s mots."
+      , greaterthan:    "Cette valeur doit être plus grande que %s."
+      , lessthan:       "Cette valeur doit être plus petite que %s."
+    }
+  });
+}(window.jQuery || window.Zepto));
