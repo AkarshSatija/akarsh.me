@@ -6,10 +6,8 @@
   </meta>
 <head>
 
-<!-- fonts -->
 
-<script src="http://use.edgefonts.net/mountains-of-christmas:n4,n7:all.js"></script>
-<script src="http://use.edgefonts.net/de-walpergens-pica-small-caps.js"></script>
+
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -21,6 +19,9 @@
   ga('send', 'pageview');
 
 </script>
+
+<script src="http://use.edgefonts.net/mountains-of-christmas:n4,n7:all.js"></script>
+<script src="http://use.edgefonts.net/de-walpergens-pica-small-caps.js"></script>
 
 <!-- fonts -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
