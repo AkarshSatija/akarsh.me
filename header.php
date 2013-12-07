@@ -34,6 +34,13 @@
 <script src="js/theme.js"></script>
 <script src="js/main.js"></script>
 <script src="js/texteffect.js"></script>
+<style type="text/css">
+	
+	.social li a img {
+	width:50%;
+	height:auto;
+}
+</style>
 </head>
 <body class="home">
 

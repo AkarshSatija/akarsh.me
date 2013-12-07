@@ -1,10 +1,7 @@
 <?php include("header.php") ; ?>
 
 <style>
-.social li a img {
-  width:55%;
-  height:auto;
-}
+
 .row-fluid .offset6:first-child {
   margin-left: 5.0%;
 }
