@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-
 <html lang="en">
-<meta style="visibility: hidden !important; display: block !important; width: 0px !important; height: 0px !important; border-style: none !important;">
-<embed id="__IDM__" type="application/x-idm-downloader" width="1" height="1" style="visibility: hidden !important; display: block !important; width: 1px !important; height: 1px !important; border-style: none !important; position: absolute !important; top: 0px !important; left: 0px !important;">
-  </meta>
 <head>
+<script>
+//GA code
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-<!-- fonts -->
+  ga('create', 'UA-46142311-1', 'akarsh.in');
+  ga('send', 'pageview');
+
+</script>
 
 <script src="http://use.edgefonts.net/mountains-of-christmas:n4,n7:all.js"></script>
 <script src="http://use.edgefonts.net/de-walpergens-pica-small-caps.js"></script>
@@ -29,67 +34,8 @@
 <script src="js/theme.js"></script>
 <script src="js/main.js"></script>
 <script src="js/texteffect.js"></script>
-<style>
-.social li a img {
-	width:55%;
-	height:auto;
-}
-.row-fluid .offset6:first-child {
-	margin-left: 5.0%;
-}
-.row-fluid .span5 {
-	width: 46.171%;
-}
-.row-fluid .span6 {
-	width: 80.0%;
-}
-.rightbar {
-	width:10%;
-	position:fixed;
-	right:0;
-	bottom:0;
-	top:0;
-	padding-top:7%;
-	/*z-index:-1;*/
-	background:rgba(0, 0, 0, 0.667);
-}
-.rightbar ul {
-	list-style:none;
-	display:block;
-	height:100%;
-	margin:auto;
-	padding:auto;
-}
-.rightbar ul li {
-	display:block;
-	height:25%;
-	margin:auto;
-	padding:auto;
-}
-.home_box {
-	margin: 5.0%;
-}
-.skills {
-	width:100%;
-	margin:0;
-}
-.skills li {
-	margin:1%;
-	display: block;
-	float: left;
-	width: 30%;
-}
-.skills li div {
-}
-.blue {
-	background:none repeat scroll 0 0 steelblue;
-}
-.red {
-	background:none repeat scroll 0 0 firebrick;
-}
-</style>
 </head>
-<body class="home" data-twttr-rendered="true" ginger_sofatware_stylesheet="true" ginger_sofatware_doc="true">
+<body class="home">
 
 <!-- =====================[ Navbar ]================== -->
 <div class="navbar navbar-fixed-top  ">
@@ -98,7 +44,7 @@
       <div class="nav-collapse">
         <ul class="nav pull-right">
           <li><a href="/about">About</a></li>
-          <li><a href="/connect">Contact</a></li>
+          <!--li><a href="/connect">Contact</a></li-->
         </ul>
       </div>
     </div>
