@@ -50,7 +50,7 @@
     <div class="container-fluid"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a class="brand" style="font-family:de-walpergens-pica-small-caps, serif; color:#fff;font-size: 2.0em;" href="/">Akarsh Satija</a>
       <div class="nav-collapse">
         <ul class="nav pull-right">
-          <li><a href="/about">About</a></li>
+          <li><a href="/about.php">About</a></li>
           <!--li><a href="/connect">Contact</a></li-->
         </ul>
       </div>
