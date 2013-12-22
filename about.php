@@ -70,7 +70,7 @@
         Akarsh is a Web developer who loves the web. He’s thinking a lot about how to make web and web tools slicker, sexier and interactive. <br>
         <br>With a BTech in CompSci from KIIT College of Engg, Gurgaon in 2012, he is already adept with PHP, MySQL, ASP.NET, JS, CSS & HTML,
          and is a sure shot to master many more acronyms in time! He plied his trade of backend & frontend web development at ITmagia & 
-         ThoughtPulp before joining <a href="solomosalsa.com">SoLoMoSalsa</a> <br>
+         ThoughtPulp before joining <a href="http://solomosalsa.com">SoLoMoSalsa</a> <br>
         <br>
         <!-- <div style="width:100%"><h3></h3></div> -->
         <div style="width:100%">
