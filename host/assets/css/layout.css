@@ -1,0 +1,441 @@
+
+@font-face {
+font-family: MuseoSans;
+src: url("../fonts/MuseoSans_500.otf") format("opentype");
+}
+@font-face {
+font-family: MuseoSans;
+font-weight: 900;
+src: url("../fonts/MuseoSans_900.otf") format("opentype");
+}
+@font-face {
+font-family: MuseoSans;
+font-weight: 300;
+src: url("../fonts/MuseoSans_300.otf") format("opentype");
+}
+
+/* --- Global Classes --- */
+
+.icon-fb
+{
+	background-image: url(../img/fb_white_btn.png);
+}
+.form-control
+{
+	border-radius: 0;
+	margin: 2px;
+}
+
+.form-control:focus
+{
+	border-radius: 0;
+	border-color: #ccc;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	
+}
+
+
+
+/*for header*/
+
+.container
+{
+width:960px;
+}
+
+
+/* for Nav */
+
+header .navbar-default
+{
+	background-color: #FFFFFF;
+	border:none;
+}
+header ul.navbar-nav
+{
+	background-color: #FFFFFF;
+	list-style: circle outside none !important;
+}
+header ul.navbar-nav >li
+{
+	text-indent: -15px;
+	padding-right: 10px;
+	background-color: #FFFFFF;
+	display: list-item;
+	list-style:disc;
+	font-size: 12px;
+	font-family: "MuseoSans";
+	color: #6a6a6a;
+
+}
+header ul.navbar-nav >li:first-child
+{
+	list-style:none;
+}
+
+header .navbar-default .navbar-nav>.active>a,header .navbar-default .navbar-nav>.active>a:hover,header .navbar-default .navbar-nav>.active>a:focus
+{
+	background-color: #FFFFFF;
+	border-top: #e27171 solid 5px;
+}
+header .navbar-nav>li>a
+{
+	border-top: #fff solid 5px;
+
+}
+
+
+
+
+/* For carousel*/
+.carousel-control.right
+{
+	background-image: none;
+
+}
+.carousel-control.left
+{
+	background-image: none;
+	
+}
+.carousel-control .icon-next:before
+{
+	content: url("../img/right_red_arrow.png");
+
+}
+.carousel-control .icon-prev:before
+{
+	content: url("../img/left_red_arrow.png");
+
+}
+.carousel-indicators .active 
+{
+	background-color: #939393;
+	border: none;
+	height: 10px;
+	width: 10px;
+	margin: 1px;
+
+}
+.carousel-indicators li 
+{
+	border: none;
+	height: 10px;
+	width: 10px;
+	background-color: #DDDDDD;
+
+}
+.carousel-indicators 
+{
+    bottom: -10px;
+}
+#home-carousel
+{
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+
+
+
+
+/* *** For tabs-grid  ***  */
+
+.tabs-grid .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus
+{
+	background-color: #a6cc81;
+	color: #FFFFFF;
+}
+.tabs-grid .nav-pills > li > a
+{
+	border-radius: 0;
+	background-color: #dadada;
+	color: #434343;
+}
+
+.tabs-grid .caret
+{
+	 position: absolute;
+	 border-width: 7px 7px 0;
+	 border-color: #fff rgba(0, 0, 0, 0) -moz-use-text-color;
+	 border-color: #fff rgba(0, 0, 0, 0);
+	 margin-left: 40%;
+}
+
+.tabs-grid .active .caret
+{
+	 position: absolute;
+	 border-width: 7px 7px 0;
+	 border-bottom-color:#a6cc81;
+	 border-top-color:#a6cc81;
+	 margin-left: 40%;
+}
+
+.tabs-grid .tab-content
+{
+	margin-top: 10px;
+	background-color: #a6cc81;
+}
+
+.tabs-grid .tab-content .box
+{
+	min-height: 191px;
+}
+
+.tabs-grid .tab-content .box1
+{
+	background: url(../img/box1.png) no-repeat 0 60px rgba(0, 0, 0, 0);
+}
+
+.tabs-grid .tab-content .box2
+{
+	background-color: #b5df8d;
+	background-image: url(../img/box2.png);
+	background-repeat: no-repeat;
+	background-position: 15px 40px;
+
+}
+.tabs-grid .tab-content .box3
+{
+	background: url("../img/box3.png") no-repeat 200px 41px rgba(0, 0, 0, 0);
+	text-align:right;
+}
+
+.tabs-grid .tab-content .box3 .link
+{
+	float: right;
+}
+
+.tabs-grid .tab-content .box4
+{
+	background: url(../img/box4.png) no-repeat 0 60px rgba(0, 0, 0, 0);
+	border-right: 8px solid #b5df8d;
+}
+
+.tabs-grid .tab-content .box5
+{
+	background: url(../img/box5.png) no-repeat 164px 0px rgba(0, 0, 0, 0);
+}
+
+
+
+
+.tabs-grid .box .box-data
+{
+	width: 60%;
+	padding-top: 25px;
+}
+.tabs-grid  .box .box-data span
+{
+	float: left;
+	font-size: 13px;
+}
+
+.tabs-grid .box .box-data h5
+{
+	font-family: museosans;
+    font-weight: 900;
+}
+
+.tabs-grid .box .box-data .link
+{
+	padding-top: 15px;
+	
+}
+
+.tabs-grid .box .box-data .link a
+{
+	color: #c25b5b;
+	border-bottom:1px solid #83ab5b;
+}
+
+.tabs-grid hr
+{
+	margin: 0;
+	border-width: 8px;
+	border-color: #b5df8d;
+}
+
+
+/* For main grid */
+
+.main-grid
+{
+	padding-top: 25px;
+	border-bottom: #eaeaea 20px solid;
+}
+
+
+.main-grid li
+{
+	float: left;
+	display: block;
+}
+
+.main-grid .sidebar .panel-title .caret
+{
+	border-width: 0 6px 6px;
+}
+.main-grid .sidebar .panel .collapsed>.caret
+{
+	border-width: 6px 6px 0;
+	/*background-color: gray;*/
+	border-top-color:gray;
+}
+
+.main-grid .sidebar .panel-title .title
+{
+	font-size: 13px;
+}
+
+.main-grid .head .title
+{
+	font-family: "MuseoSans";
+	font-size: 18px;
+	font-weight: 700;
+}
+.main-grid .panel-title
+{
+	margin-left: 45px;
+}
+.main-grid .panel-heading
+{
+	min-height: 60px;
+}
+
+
+
+/*  Signing-signup grid  */
+.signing-grid
+{
+	background-color: #F6F6F6;
+	padding-bottom: 150px;
+}
+
+.signing-grid h3
+{
+	text-align: center;
+}
+
+
+.signing-grid .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus
+{
+	background-color: #a6cc81;
+	color: #FFFFFF;
+}
+.signing-grid .nav-pills > li > a
+{
+	border-radius: 0;
+	background-color: #dadada;
+	color: #434343;
+}
+
+.signing-grid .caret
+{
+	 position: absolute;
+	 border-width: 7px 7px 0;
+	 border-color: #f6f6f6 rgba(0, 0, 0, 0) -moz-use-text-color;
+	 border-color: #f6f6f6 rgba(0, 0, 0, 0);
+	 margin-left: 40%;
+}
+
+.signing-grid .active .caret
+{
+	 position: absolute;
+	 border-width: 7px 7px 0;
+	 border-bottom-color:#a6cc81;
+	 border-top-color:#a6cc81;
+	 margin-left: 40%;
+}
+.signing-grid .tab-content
+{
+	margin-top: 25px;
+}
+
+.signing-grid .btn-fb
+{
+	background-color: #5c76b3;
+	color: #fff;
+	border-radius: 0;
+	padding:5px 20px 5px 20px;
+	width: 100%;
+	font-family: "MuseoSans";
+	font-weight: 300;
+	font-size: 15;
+}
+
+.signing-grid .btn-red
+{
+	background-color: #e27171;
+	color: #fff;
+	border-radius: 0;
+	padding:5px 20px 5px 20px;
+	width: 100%;
+	font-family: "MuseoSans";
+	font-weight: 300;
+	font-size: 15;
+	margin-top: 25px;
+}
+
+.signing-grid .big-or
+{
+	margin: 15px 0 10px 0;
+	text-align: center;
+	font-size: 18px;
+	font-family: "MuseoSans";
+	color: #939393;
+
+}
+
+.signing-grid #login .username
+{
+background-image: url(../img/right_red_arrow.png);
+background-repeat: no-repeat;
+background-position: 0px 0px;
+padding-left: 25px;
+
+}
+.signing-grid #login .password
+{
+background-image: url(../img/right_red_arrow.png);
+background-repeat: no-repeat;
+background-position: 0px 0px;
+padding-left: 25px;
+
+}
+.signing-grid #login a.forgot
+{
+	font-size: 13px;
+	margin: 3px 0 0 3px;
+}
+
+/* FOR FOOTER */
+footer.footer
+{
+	border-top:50px solid black;
+	background-color: #1b1b1b;
+}
+
+footer.footer ul >li
+{
+	width:20%;
+	font-size: 10px;
+	font-family:MuseoSans;
+	font-weight: 300;
+}
+.footer-menu
+{
+	margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 75%;
+}
+.footer-menu a
+{
+	text-decoration: none;
+	color: #6a6a6a;
+}
+
+
+
