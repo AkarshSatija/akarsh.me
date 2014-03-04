@@ -20,6 +20,10 @@ src: url("../fonts/MuseoSans_300.otf") format("opentype");
 {
 	background-image: url(../img/fb_white_btn.png);
 }
+.icon-video
+{
+	margin: auto;
+}
 .form-control
 {
 	border-radius: 0;
@@ -303,6 +307,88 @@ header .navbar-nav>li>a
 {
 	min-height: 60px;
 }
+
+.main-grid .listing h4
+{
+	font-family: "MuseoSans";
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.main-grid .listing
+{
+	margin-bottom: 10px;
+}
+
+.main-grid hr
+{
+	margin-bottom: 10px;
+}
+
+.main-grid .column
+{
+	min-height: 250px;
+	padding: 0;
+	
+}
+
+.main-grid .column1
+{
+	border-right: 1px solid #ccc;
+}
+
+
+.main-grid .item
+{
+	min-height: 120px;
+	padding: 15px;
+}
+
+.main-grid .item h5
+{
+	font-family: MuseoSans;
+	font-weight: 700;
+	font-size: 15px;
+	color: #004b91;
+}
+.main-grid .item h5 span
+{
+	
+	color: #e27171;
+}
+.main-grid .item p
+{
+	font-family: MuseoSans;
+	font-weight: 300;
+	font-size: 13px;
+	color: #666666;
+}
+
+
+
+.main-grid .item .btn-video
+{
+	border-radius: 0;
+	background-color: #f1f1f1;
+	border:0;
+	font-family: MuseoSans;
+	font-weight: 500;
+	font-size: 12px;
+	padding: 7px 30px 7px 30px;
+	margin: 10px 0 15px 0;
+
+}
+.main-grid .item .asked-by
+{
+	color: #2a2a2a;
+}
+
+.main-grid .listing hr
+{
+	border-bottom: 5px solid gray;
+	
+}
+
 
 
 
