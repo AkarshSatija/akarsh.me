@@ -378,6 +378,32 @@ header .navbar-nav>li>a
 	margin: 10px 0 15px 0;
 
 }
+
+.main-grid .item .btn-offer
+{
+	border-radius: 0;
+	background-color: #d1eeb4;
+	border:0;
+	font-family: MuseoSans;
+	font-weight: 500;
+	font-size: 12px;
+	padding: 7px 30px 7px 30px;
+	margin: 10px 0 15px 0;
+
+}
+.main-grid .item .btn-detail
+{
+	border-radius: 0;
+	background-color: #fcf1b1;
+	border:0;
+	font-family: MuseoSans;
+	font-weight: 500;
+	font-size: 12px;
+	padding: 7px 30px 7px 30px;
+	margin: 10px 0 15px 0;
+
+}
+
 .main-grid .item .asked-by
 {
 	color: #2a2a2a;
@@ -385,8 +411,8 @@ header .navbar-nav>li>a
 
 .main-grid .listing hr
 {
-	border-bottom: 5px solid gray;
-	
+	border-bottom: 5px solid #eeeeee;
+	border-top: 1px solid #cdcdcd	;
 }
 
 
@@ -476,17 +502,17 @@ header .navbar-nav>li>a
 
 .signing-grid #login .username
 {
-background-image: url(../img/right_red_arrow.png);
+background-image: url(../img/username.png);
 background-repeat: no-repeat;
-background-position: 0px 0px;
+background-position: 5px 5px;
 padding-left: 25px;
 
 }
 .signing-grid #login .password
 {
-background-image: url(../img/right_red_arrow.png);
+background-image: url(../img/password.png);
 background-repeat: no-repeat;
-background-position: 0px 0px;
+background-position: 5px 5px;
 padding-left: 25px;
 
 }
