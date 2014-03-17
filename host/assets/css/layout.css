@@ -1,5 +1,10 @@
 
 @font-face {
+  font-family: opensanss;
+  src: url('../fonts/semibold.ttf');
+}
+
+@font-face {
 font-family: MuseoSans;
 src: url("../fonts/MuseoSans_500.otf") format("opentype");
 }
@@ -7,6 +12,17 @@ src: url("../fonts/MuseoSans_500.otf") format("opentype");
 font-family: MuseoSans;
 font-weight: 900;
 src: url("../fonts/MuseoSans_900.otf") format("opentype");
+}
+
+@font-face {
+font-family: MuseoSansI;
+src: url("../fonts/MuseoSans-300Italic.otf") format("opentype");
+}
+
+@font-face {
+font-family: MuseoSans500;
+font-weight: 500;
+src: url("../fonts/MuseoSans_500.otf") format("opentype");
 }
 @font-face {
 font-family: MuseoSans;
@@ -18,6 +34,9 @@ font-family: MuseoSans;
 font-weight: 100;
 src: url("../fonts/MuseoSans_100.otf") format("opentype");
 }
+
+
+
 
 /* --- Global Classes --- */
 
@@ -127,6 +146,18 @@ src: url("../fonts/MuseoSans_100.otf") format("opentype");
     border-color: #404040;
 }
 
+.btn-red
+{
+	background-color: #e27171;
+	color: #fff;
+	border-radius: 0;
+	padding:5px 20px 5px 20px;
+	font-family: "MuseoSans";
+	font-weight: 300;
+	font-size: 15;
+	margin-bottom: 15px;
+	
+}
 
 
 
@@ -423,6 +454,12 @@ header .navbar-nav>li>a
 	.tabs-grid-inner .nav-pills > li.go-back
 	{
 		border-left: none;
+		
+	}
+	.tabs-grid-inner .nav-pills > li.go-back a
+	{
+		
+		padding-top: 10px;
 	}
 
 	.tabs-grid-inner .active .caret.tab-inner
@@ -546,8 +583,195 @@ header .navbar-nav>li>a
 
 	}
 
+	/*FOR TAB-GRID in 4. SOLUTION*/
+
+	#tab_inner4.nav-pills >li
+	{
+		border-left: none;
+		margin-left: 0;
+		padding: 0;
+		width: 16%;
 
 
+	}
+
+	#tab_inner4.nav-pills > li > a
+	{
+		background-color: transparent;
+	    color: #111;
+	    font-family: MuseoSans;
+	    font-size: 14px;
+	    font-weight: 300;
+	    padding-top: 120px;
+	    width: 140px;
+		height: 140px;
+
+		/*----*/
+
+		
+		background-position: 25px 15px;
+	    background-size: 60% auto;
+		background-repeat: no-repeat;
+		/*border:1px solid;*/
+	}
+
+	#tab_inner4
+	{
+		margin-left: 100px;
+	}
+
+	#tab_inner4.nav-pills > li span.caret
+	{
+		display: none;
+	}
+
+	#tab_inner4.nav-pills > li.active span.caret
+	{
+		background-image: url("../img/gray_caret.png");
+	    background-repeat: no-repeat;
+	    height: 13px;
+	    margin-top: 0;
+	    position: relative;
+	    top: 35px;
+	    width: 22px;
+	 	border-bottom-color: rgba(0, 0, 0, 0);
+	    border-top-color: rgba(0, 0, 0, 0);
+	    border-style: none;
+	    border-width: 0;
+	    display: inline-block;
+
+	}
+	#expert4 .seprator
+	{
+		border-color: #cdcdcd;
+
+	}
+	
+
+
+	#tab_inner4 .tab41 a
+	{
+		background-image: url("../img/tab4_design.png");
+		
+	}
+	#tab_inner4 .tab41.active a
+	{
+		background-image: url("../img/tab4_computer_inverse.png");
+		
+	}
+
+	#tab_inner4 .tab42 a
+	{
+		background-image: url("../img/tab4_design.png");
+		
+	}
+	#tab_inner4 .tab42.active a
+	{
+		background-image: url("../img/tab4_computer_inverse.png");
+		
+	}
+	#tab_inner4 .tab43 a
+	{
+		background-image: url("../img/tab4_design.png");
+		
+	}
+	#tab_inner4 .tab43.active a
+	{
+		background-image: url("../img/tab4_computer_inverse.png");
+		
+	}
+	#tab_inner4 .tab44 a
+	{
+		background-image: url("../img/tab4_design.png");
+		
+	}
+	#tab_inner4 .tab44.active a
+	{
+		background-image: url("../img/tab4_computer_inverse.png");
+		
+	}
+	#tab_inner4 .tab45 a
+	{
+		background-image: url("../img/tab4_design.png");
+		
+	}
+	#tab_inner4 .tab45.active a
+	{
+		background-image: url("../img/tab4_computer_inverse.png");
+		
+	}
+
+	#expert4 .tab-content .tab-pane.active
+	{
+		padding: 40px 150px;
+		color: #7b7b7b;
+		font-family: MuseoSans;
+		font-weight: 300;
+		font-size: 15px;
+
+	}
+	#expert4 .tab-content .tab-pane.active a
+	{
+		text-decoration: none;
+		color: inherit;
+		font: inherit;
+		margin: 0 3px;
+		
+	}
+
+	/* #expert5 */
+	#rating-carousel .item
+	{
+		text-align: center;
+	}
+
+	#expert5 blockquote
+	{
+		text-align: center;
+		border:none;
+		margin: 15px 40px;
+	}
+	#expert5 blockquote:before {
+	    content: "\"";
+	    line-height: 0;
+	    font-size: 24px;
+	}
+
+	#expert5 blockquote:after {
+	    content: "\"";
+	    line-height: 0;
+	    font-size: 24px;
+	}
+
+	#expert5 .gray-caret
+	{
+		background-image: url("../img/gray_caret.png");
+	    background-repeat: no-repeat;
+	    height: 13px;
+	    margin-top: 0;
+	    position: relative;
+	    top: 35px;
+	    width: 22px;
+	 	border-bottom-color: rgba(0, 0, 0, 0);
+	    border-top-color: rgba(0, 0, 0, 0);
+	    border-style: none;
+	    border-width: 0;
+	    display: inline-block;
+	    
+
+	}
+	#expert5 .seprator
+	{
+		border-color: #cdcdcd;
+
+	}
+	#rating-carousel .item p
+	{
+		color: #7b7b7b;
+		font-family: MuseoSans;
+		font-weight: 700;
+		font-size: 15px;
+	}
 
 
 /* For main grid */
@@ -948,9 +1172,149 @@ footer.footer ul >li
 	color: #6a6a6a;
 }
 
-.slide{
-     display: none;
-    position: relative;
-    transition: left 0.6s ease-in-out 0s;
+
+
+
+
+//----- ayush work start here
+
+.cat_page_search_section{
+	width:100%;
+	margin-top: 4%;
+    margin-bottom: 9%;
+}
+
+.cat_page_search_section1{
+
+}
+
+
+.cat_page_search_section1 input[type=text]{
+
+    width: 100% !important;
+    border: 1px solid #b0b0b0;
+    font-size: 14px;   
+    color: #6e6e6e;
+    height: 30px;
+    margin-top: -2px;
+    font-family: MuseoSansI;
+    padding-left: 3%;
+	
+}
+
+ 
+.cat_page_search_section1 input[type=submit]{
+
+	width:100%;
+	background-color: black;
+	color: #FFF;
+	border: 1px solid black;
+	height: 30px;
+	margin-top: -2px;
+	font-size: 13px;
+	font-family: MuseoSans500;
+
+
+
+
+}
+
+.cat_page_search_section1 p{
+	margin:0px;
+}
+#searchbox{
+	width:86%;
+	float:left;
+}
+
+#searchsubmit{
+	float:left;
+	width:14%;
+}
+
+
+.cat_page_search_section2{
+
+	width:80%;
+	margin:10px auto;	
+	text-align: center;
+}
+
+
+
+.cat_page_search_section2 ul{
+
+	list-style: none;
+
+}
+
+.cat_page_search_section2 ul li{
+
+	float:left;
+	margin:10px;
+	color:#b0b0b0;
+	font-family: opensanss;	
+	margin-left: 1%;
+
+}
+
+.cat_page_search_section2 ul li a{
+	border-bottom: 3px solid #FFF;
+	text-decoration: none;
+	color:#b0b0b0;
+
+}
+
+.cat_page_search_section2 ul li a:hover, .cat_page_search_section2 ul li a:focus , .cat_page_search_section2 ul li.active a
+{
+color: black;
+border-bottom: 3px solid #e27171;
+}
+
+
+/* problem page  */
+
+
+.problem_post h5{
+	font-family: MuseoSans;
+	font-weight: 700;
+	font-size: 15px;
+	color: #004b91;
+}
+
+.problem_post p{
+	font-family: MuseoSans;
+	font-weight: 300;
+	font-size: 13px;
+	color: #666666;
+}
+
+.problem_sub{
+	font-family: opensanss;	
+	color:#494949; 
+}
+
+.problem_ans{
+	font-family: opensanss;	
+	color:#2a2a2a; 
+}
+
+.bolder{
+	font-size: 1.2em;
+}
+
+.problem_tag{
+
+	border:1px solid #b4b4b4;
+	margin:7px;
+	padding: 9px;
+	color:#8d8d8d;
+	border-radius: 5px;
+
+}
+
+.problem-tabs li{
+	float:right;
+
 }
 
