@@ -35,6 +35,20 @@ font-weight: 100;
 src: url("../fonts/MuseoSans_100.otf") format("opentype");
 }
 
+@font-face {
+font-family: opensansb;
+src: url("../fonts/OpenSansBold.ttf");
+}
+
+@font-face {
+font-family: opensansr;
+src: url("../fonts/OpenSansRegular.ttf");
+}
+
+
+
+
+
 
 
 
@@ -103,7 +117,7 @@ src: url("../fonts/MuseoSans_100.otf") format("opentype");
 	background-color: #e27171;
 	color: #FFFFFF;
 	border-radius: 0;
-	padding:10px 40px;
+	
 }
 
 .pagination >li
@@ -779,7 +793,7 @@ header .navbar-nav>li>a
 .main-grid
 {
 	padding-top: 25px;
-	border-bottom: #eaeaea 20px solid;
+	
 }
 
 
@@ -887,6 +901,13 @@ header .navbar-nav>li>a
 	padding-top: 5px;
 	padding-bottom: 5px;
 	padding-left: 15px
+	
+}
+.main-grid .panel-body .list-item li a
+{
+	
+	color: #444343;
+	text-decoration: none;
 	
 }
 .main-grid .panel-body .list-item li.active
@@ -1148,8 +1169,8 @@ padding-left: 25px;
 /* FOR FOOTER */
 footer.footer
 {
-	border-top:50px solid black;
-	background-color: #1b1b1b;
+	
+	background-color: #000;
 }
 
 footer.footer ul >li
@@ -1316,5 +1337,66 @@ border-bottom: 3px solid #e27171;
 .problem-tabs li{
 	float:right;
 
+}
+
+.question_page h4{
+	font-family: museosans;
+	font-weight: 700;
+}
+
+.question_page h6{
+	font-family: museosans;
+	font-weight: 100;
+	color:#a1a1a1;
+	font-size: 1.1em;
+}
+
+.question_page label{
+	font-family: opensansb;
+	font-size: 15px;
+}
+
+.question_page .problem_tag{
+	background-color: #fffcaa;
+	margin: 2px;
+	padding: 6px;
+	border: 1px solid #e2df83;
+	color:#404040;
+}
+
+.question-page-side-box{
+	border:1px solid #b3b3b3;
+	min-height: 300px;
+
+}
+
+.question-page-side-box{
+	padding:18px;
+}
+
+.question-page-side-box h4{
+	color:#e27171;
+}
+
+.question-page-side-box ul {
+	margin-left: -20px;
+}
+
+.question-page-side-box ul li{
+font-family:opensansr;
+color:#6d6d6d;
+font-size: 13px;
+
+}
+
+.footer-menu li a{
+	padding:9px;
+	font-family: MuseoSansI;
+	font-weight: 300;
+	font-size: 11px;
+}
+
+.footer-menu li a:hover , .footer-menu li a:focus {
+	background-color: #000;
 }
 
