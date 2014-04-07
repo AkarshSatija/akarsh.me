@@ -36,6 +36,12 @@ src: url("../fonts/MuseoSans_100.otf") format("opentype");
 }
 
 @font-face {
+font-family: MuseoSans;
+font-weight: 700;
+src: url("../fonts/MuseoSans_700.otf") format("opentype");
+}
+
+@font-face {
 font-family: opensansb;
 src: url("../fonts/OpenSansBold.ttf");
 }
@@ -303,6 +309,21 @@ header .navbar-nav>li>a
 	background-color: #dadada;
 	color: #434343;
 }
+
+.tabs-grid .nav-pills > li.expert_black a,
+.tabs-grid .nav-pills > li.expert_black.active a
+{
+	background-color: #303030;
+	color: #fff;
+}
+
+.tabs-grid .nav-pills > li.expert_black a img,
+.tabs-grid .nav-pills > li.expert_black.active a img
+{
+	width:20px;
+}
+
+
 .nav-pills >li
 {
 	padding: 0 5px 0 2px;
@@ -324,6 +345,15 @@ header .navbar-nav>li>a
 	 border-bottom-color:#a6cc81;
 	 border-top-color:#a6cc81;
 	 margin-left: 40%;
+}
+
+
+.expert_black .caret.tab_outer ,
+.expert_black.active .caret.tab_outer
+{
+	border-bottom-color:#111 !important;
+	border-top-color:#abc;
+	display: none;
 }
 
 .tabs-grid .tab-content
@@ -1339,6 +1369,7 @@ border-bottom: 3px solid #e27171;
 
 }
 
+
 .question_page h4{
 	font-family: museosans;
 	font-weight: 700;
@@ -1355,6 +1386,9 @@ border-bottom: 3px solid #e27171;
 	font-family: opensansb;
 	font-size: 15px;
 }
+
+
+
 
 .question_page .problem_tag{
 	background-color: #fffcaa;
@@ -1398,5 +1432,188 @@ font-size: 13px;
 
 .footer-menu li a:hover , .footer-menu li a:focus {
 	background-color: #000;
+}
+
+.signing-grid .user
+{
+background-image: url(../img/username.png);
+background-repeat: no-repeat;
+background-position: 6px 9px;
+padding-left: 25px;
+font-family:MuseoSans;
+font-weight:300;
+
+}
+.signing-grid .pass
+{
+background-image: url(../img/password.png);
+background-repeat: no-repeat;
+background-position: 6px 9px;
+padding-left: 25px;
+border: none;
+font-family:MuseoSans;
+font-weight:300;
+box-shadow: 1px 1px 2px 1px #f5f5f5;
+-moz-box-shadow: 1px 1px 2px 1px #f5f5f5;
+-webkit-box-shadow: 1px 1px 2px 1px #f5f5f5;
+}
+
+
+/* indexpage expert registration */
+
+.expert-grid{
+
+	width:100%;
+	background-color: #f3f3f3;
+
+}
+
+.expert_panel{
+
+	background-color: #f3f3f3;
+	border-top: 1px solid #cdcdcd ; 
+    border-radius: 0px;
+-webkit-box-shadow: none;
+box-shadow: none; 
+}
+
+.expertpicker{
+	border-radius: 0px;
+
+}
+
+.expert_title{
+	font-family: museosans;
+	font-weight: 900;
+}
+
+
+
+.expert_main_title{
+	margin: 14px 0px -7px 13px;
+font-size: 17px;
+
+}
+
+.expert_panel .title{
+
+	font-family: museosans;
+	font-weight: 700;
+	font-size: 15px;
+
+}
+
+
+.panel-title>a:hover , .panel-title>a:focus ,.panel-title>a:active{
+
+	text-decoration: none;
+	color:#e27171;
+
+}
+
+	
+ .expert_panel .panel-title .title{
+ 	text-decoration: none;
+	color:#e27171;
+
+ }
+
+ .expert_panel .panel-title .collapsed>.title {
+color: #565555;
+}
+
+
+.expert_image{
+	float:left;
+	width:40%;
+}
+
+.expert_image p{
+	margin: 0 0 1px;
+}
+
+.expert_video{
+	float:right;
+	width:30;
+}
+
+.expert_video p{
+	margin: 0 0 0px;
+	font-family: museosans;
+	font-family: 300;
+	color:#2263a0;
+	font-size: 11px;
+}
+
+.work_1{
+
+	float:left;
+	width:30%;
+	font-family: opensansr;
+	color:#5a5959;
+	font-size: 15px;
+	
+}
+
+.work_1 p , .work_2 p {
+	margin: 0 0 10px;
+	font-size: 14px;
+}
+.work_2{
+
+	float:left;
+	width:30%;
+	font-family: opensansr;
+	font-size: 15px;
+
+}
+
+.expert_content_sub{
+	width: 100%;	
+    display: inline-block;
+}
+
+.expert_h4{
+	font-family: museosans;
+	font-weight: 700;
+
+}
+
+.thumb{
+	background: url(../img/like_icon.png) no-repeat 0px 0px rgba(0,0,0,0);
+background-size: 20% auto;
+padding: 3px 5px 3px 25px;
+font-weight: 300;
+font-size: 13px;
+font-family: MuseoSans;
+}
+
+.view{
+	background: url(../img/viewed_icon.png) no-repeat 0px 5px rgba(0,0,0,0);
+	background-size: 20% auto;
+	padding: 3px 5px 3px 25px;
+	font-weight: 300;
+	font-size: 13px;
+	font-family: MuseoSans;
+	margin-left: 5px;
+}
+
+
+.expert-nav li{
+
+}
+.expert-nav li a{
+	background-color: #FFF;
+	color:333333;
+}
+.expert-nav>.active>a{
+	background-color: #FFF !important;
+	border-bottom: 4px solid #e27171;
+
+}
+
+.expert-nav li a:active,  .expert-nav li a:focus , .expert-nav li a:hover{
+	background-color: #FFF;
+	border-bottom: 4px solid #e27171;
 }
 

@@ -1,0 +1,202 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+
+
+
+header
+{
+	background-color: #FFF;
+}
+body
+{
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	margin: 0;
+	background-color: #aaa;
+	background-image: url("../img/background.jpg");
+	background-size: auto;
+    min-width: 100%;
+}
+input[type="text"]
+{
+	width: 80%;
+	height: 60px;
+	font-size: .8em;
+	padding-left: 15px;
+	background-color: rgba(255,255,255,.8);
+	border:0;
+	margin: 5px;
+}
+::-webkit-input-placeholder {
+   color: #4f4c4b;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #4f4c4b;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #4f4c4b;  
+}
+
+:-ms-input-placeholder {  
+   color: #4f4c4b;  
+}
+
+input[type="submit"],input[type="button"],button
+{
+	width: 20%;
+	height: 50px;
+	font-size: .8em;
+	color: #fff;
+	background-color: rgba(5,126,186,.8);
+	border:0;
+	margin: 5px;
+}
+
+
+
+
+
+.container
+{
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.logo
+{
+	max-width: 300px;
+	width: 30%;
+	height: auto;
+	padding: 25px;
+}
+.closed
+{
+	font-weight: 700;
+	font-size: 3em;
+	color: #807f7f;
+	margin-top: 60px;
+	float: right!important
+}
+.main_container
+{
+	text-align: center;
+	padding-top: 100px;
+	color: #FFF;
+	font-size: 2em;
+
+}
+.main_container .hash
+{
+	font-size: 2em;
+}
+.form-box
+{
+	margin-top: 25px;
+}
+
+
+
+/* Media Quries */
+
+@media (max-width: 1330px) and (min-width: 960px) {
+  body {
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .container
+  {
+  	width: 960px;
+  	font-size: 1.7em;
+  }
+  .closed
+  {
+  	font-size: 1.5em;
+
+  }
+
+}
+
+
+
+@media (max-width: 960px) and (min-width: 800px) {
+  body {
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .container
+  {
+  	width: 800px;
+  	font-size: 1.7em;
+  }
+  .closed
+  {
+  	font-size: 1.2em;
+
+  }
+
+}
+
+@media (max-width: 800px) and (min-width: 600px) {
+  body {
+    background-size: auto 100%;
+    background-attachment: fixed;
+
+  }
+
+  .container
+  {
+  	width: 600px;
+  	font-size: 1.5em;
+  }
+  .closed
+  {
+  	font-size: 1em;
+
+  }
+
+  input[type="text"]
+  {
+  	font-size: 0.7em;
+  }
+
+}
+
+
+
+
+
+
+@media (max-width: 600px) and (min-width: 220px) {
+  
+  body {
+    background-size: auto 100%;
+    background-attachment: fixed;
+
+  }
+
+  .container
+  {
+  	width: 400px;
+  	font-size: 1em;
+  }
+  .closed
+  {
+  	font-size: 1em;
+  	margin-top: 12%;
+
+  }
+  input[type="text"], input[type="submit"]
+  {
+  	font-size: 0.7em;
+  	height: 40px;
+  }
+
+}
+
+
+
+

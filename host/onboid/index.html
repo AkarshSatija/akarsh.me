@@ -107,9 +107,13 @@
 		<li class="active">
 			<a href="#how" data-toggle="tab">HOW IT WORKS</a><span class="caret tab-outer"></span>
 		</li>
-		<li class="">
+		<li class="expert_black">
+			<a href="#expert_black" data-toggle="tab"><img src="assets/img/cap.png"> EXPERT REGISTRATION</a><span style="border-top-color:#303030;" class="caret tab-outer"></span>
+		</li>
+		<li class="hide">
 			<a href="#expert" data-toggle="tab">EXPERT REGISTRATION</a><span class="caret tab-outer"></span>
 		</li>
+		
 		</ul>
 	</div>
 	<div class="tab-content">
@@ -123,7 +127,7 @@
 		            		<h5>1.RAISE A QUESTION</h5>
 		            		<span class="text">If you are stuck somewhere, facing some real problem for yourself and for your team</span>
 		            		<span class="link">
-			            		<a href="#expert2" data-toggle="tab">POST YOUR PROBLEM</a>
+			            		<a href="javascript:select_tab2(1)" >POST YOUR PROBLEM</a>
 			            		<img src="assets/img/icon-arrow-forward.png">
 		            		</span>
 		            	</div>
@@ -135,7 +139,7 @@
 			  			<div class="box-data pull-right">
 		            		<h5>2.RAISE A QUESTION</h5>
 		            		<span class="text">If you are stuck somewhere, facing some real problem for yourself and for your team</span>
-		            		<span class="link"><a href="#">POST YOUR PROBLEM</a>
+		            		<span class="link"><a href="javascript:select_tab2(2)">POST YOUR PROBLEM</a>
 		            		<img src="assets/img/icon-arrow-forward.png"></span>
 
 		            	</div>
@@ -146,7 +150,7 @@
 	            	<div class="box-data pull-left">
 	            		<h5>3.RAISE A QUESTION</h5>
 	            		<span class="text">If you are stuck somewhere, facing some real problem for yourself and for your team</span>
-	            		<span class="link"><a href="#">POST YOUR PROBLEM</a><img src="assets/img/icon-arrow-forward.png"></span>
+	            		<span class="link"><a href="javascript:select_tab2(3)">POST YOUR PROBLEM</a><img src="assets/img/icon-arrow-forward.png"></span>
 		            </div>
 	            </div>
 
@@ -160,7 +164,7 @@
 		  			<div class="box-data pull-right">
 	            		<h5>4.RAISE A QUESTION</h5>
 	            		<span class="text">If you are stuck somewhere, facing some real problem for yourself and for your team</span>
-	            		<span class="link"><a href="#">POST YOUR PROBLEM</a><img src="assets/img/icon-arrow-forward.png"></span>
+	            		<span class="link"><a href="javascript:select_tab2(4)">POST YOUR PROBLEM</a><img src="assets/img/icon-arrow-forward.png"></span>
 	            	</div>
 	            </div>
 	            
@@ -168,7 +172,7 @@
 		  			<div class="box-data pull-left">
 	            		<h5>5.RAISE A QUESTION</h5>
 	            		<span class="text">If you are stuck somewhere, facing some real problem for yourself and for your team</span>
-	            		<span class="link"><a href="#">POST YOUR PROBLEM</a><img src="assets/img/icon-arrow-forward.png"></span>
+	            		<span class="link"><a href="javascript:select_tab2(5)">POST YOUR PROBLEM</a><img src="assets/img/icon-arrow-forward.png"></span>
 	            	</div>
 	            </div>
 
@@ -176,7 +180,7 @@
 	  	</div>
 	  </div>
 	  <div class="tab-pane fade" id="expert">
-	  	<!-- trying something insane -->
+	  
 	  	<div class="tabs-grid-inner">
 	  		<div class="container">
 	  			<ul class="nav nav-pills" id="tab_inner">
@@ -486,34 +490,253 @@
 		  		  	   	      Ankit Khanna, Vice President Product<br>snapdeal.com
 		  		  	   	      </p>
 		  		  	   	      <button class="btn btn-lg btn-red" type="submit">LOGIN TO MY ACCOUNT</button>
-
 		  		  	   	    </div>
+		  		  	   	   	
+		  		  	   	   	<div class="item">
+		  		  	   	   	  <blockquote>
+		  		  	   	   	  Quote Qu0te Quote Qu0te Quote Qu0te Quote Qu0te Quote Qu0te Quote<br> Qu0te Quote Qu0te Quote Qu0te Quote Qu0te Quote
+		  		  	   	   	  </blockquote>
+		  		  	   	   	  <span class="caret gray-caret"></span><hr class="seprator">
+		  		  	   	   	  <p>
+		  		  	   	   	  Ankit Khanna, Vice President Product<br>snapdeal.com
+		  		  	   	   	  </p>
+		  		  	   	   	  <button class="btn btn-lg btn-red" type="submit">LOGIN TO MY ACCOUNT</button>
+		  		  	   	   	</div>
+
 		  		  	   	    <div class="item">
 		  		  	   	      <blockquote>
 		  		  	   	      Quote Qu0te Quote Qu0te Quote Qu0te Quote Qu0te Quote Qu0te Quote<br> Qu0te Quote Qu0te Quote Qu0te Quote Qu0te Quote
 		  		  	   	      </blockquote>
 		  		  	   	      <span class="caret gray-caret"></span><hr class="seprator">
-
-		  		  	   	    </div>
-		  		  	   	    <div class="item">
-		  		  	   	      <blockquote>
-		  		  	   	      Quote Qu0te Quote Qu0te Quote Qu0te Quote Qu0te Quote Qu0te Quote<br> Qu0te Quote Qu0te Quote Qu0te Quote Qu0te Quote
-		  		  	   	      </blockquote>
-		  		  	   	      <span class="caret gray-caret"></span><hr class="seprator">
+		  		  	   	      <p>
+		  		  	   	      Ankit Khanna, Vice President Product<br>snapdeal.com
+		  		  	   	      </p>
+		  		  	   	      <button class="btn btn-lg btn-red" type="submit">LOGIN TO MY ACCOUNT</button>
 		  		  	   	    </div>
 		  		  	   	    
 		  		  	   	  </div>
 		  		  	   	  <a class="left carousel-control" href="#rating-carousel" data-slide="prev">
-		  		  	   	    <span class="icon-prev"></span>
+		  		  	   	    <span><img style="width:10%; padding-top:40px" src="assets/img/left_red_arrow.png"></span>
 		  		  	   	  </a>
 		  		  	   	  <a class="right carousel-control" href="#rating-carousel" data-slide="next">
-		  		  	   	    <span class="icon-next"></span>
+		  		  	   	    <span><img style="width:10%; padding-top:40px" src="assets/img/right_red_arrow.png"></span>
 		  		  	   	  </a>
 		  		  	   	</div>
 
 	  		  	</div>
 	  		  </div>
 	  		</div>
+	  	</div>
+	  	<!-- -->
+	  </div>
+	  <div class="tab-pane fade" id="expert_black">
+	  	
+	  	<div class="tabs-grid-inner expert-grid">
+			<div class="container">
+				<div class="expert_main_title">
+				     <span class="title expert_title">REGISTER YOURSELF AS AN EXPERT</span><span class="expert_title_2"> & GET EARNING AT YOUR COMFORT!</span>
+			    </div>
+			</div>    
+				<hr style="border-top: 1px solid #cdcdcd;">
+			<div class="container">
+				<div class="panel-group" id="accordion" style="width:68%;margin-top: -14px;">
+
+
+
+
+				  <div class="panel expert_panel" style="border:none">
+				    <div class="panel-heading" >
+				      <h4 class="panel-title">
+				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#expert_panel_1">
+				        <span class="title">BASIC INFORMATION</span>
+						<span class="caret pull-right"></span>
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="expert_panel_1" class="panel-collapse collapse">
+				      <div class="panel-body">
+				        <ul class="list-item">
+				        	<li><a href="#">1</a></li>
+				        	<li class="active"><a href="#">1</a></li>
+				        	<li><a href="#">3</a></li>
+				        	<li><a href="#">2</a></li>
+				        </ul>
+				      </div>
+				    </div>
+				  </div>
+
+
+
+
+				  
+				  <div class="panel expert_panel">
+				    <div class="panel-heading" >
+				      <h4 class="panel-title">
+				        <a class="" data-toggle="collapse" data-parent="#accordion" href="#expert_panel_2">	
+						<span class="title" >WORK EXPERIENCE</span>
+						<span class="caret pull-right"></span>
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="expert_panel_2" class="panel-collapse in" style="height:auto">
+				      <div class="panel-body">
+				        <form role="form">
+				        	<div class="row">
+				        	  <div class="col-xs-6 form-group">
+				        	  	 <label for="exampleInputEmail1">Organization</label>
+			         		      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Start typing to see list" >
+				        	  </div>
+				        	  <div class="col-xs-4 form-group">
+				        	  	  <label for="exampleInputEmail1">Website</label>
+  	 			         		   <input type="email" class="form-control" id="exampleInputEmail1"  >
+				        	  </div>									         	 
+				        	</div>
+
+				        	  <div class="form-group">
+				        	  	 <label for="exampleInputEmail1">Position</label>
+				        		   <input type="email" class="form-control" id="exampleInputEmail1" placeholder="(E.G Art Director)" >
+				        	  </div>
+							<div class="row">
+				        	  <div class="col-xs-6 form-group">
+				        	  	  <label for="exampleInputEmail1">Location</label>
+									         		    <select class="form-control selectpicker expertpicker">
+									         		      <option select>Please choose</option>
+									         		      <option>2</option>
+									         		      <option>3</option>
+									         		      <option>4</option>
+									         		      <option>5</option>
+									         		    </select>
+				        	  </div>
+				        	  <div class="col-xs-4 form-group">
+				        	  	 	 <label for="exampleInputEmail1" style="visibility:hidden">second</label>
+  	 			         		   <input type="email" class="form-control" id="exampleInputEmail1"  placeholder="City"  >
+				        	  </div>									         	 
+				        	</div>	
+
+				        	<div class="row">				        	
+				        	  <div class="col-xs-5 form-group">
+							        	  	<div class="row">
+									        	  <div class="col-xs-6 form-group">
+									        	  	 <label for="exampleInputEmail1">Time Period</label>
+									        	  	 <select class="form-control selectpicker expertpicker">
+									         		      <option select>Month</option>
+									         		      <option>2</option>
+									         		      <option>3</option>
+									         		      <option>4</option>
+									         		      <option>5</option>
+									         		    </select>
+									        	  	  
+									        	  </div>
+									        	  <div class="col-xs-6 form-group">
+									        	  	 <label for="exampleInputEmail1" style="visibility:hidden">second</label>
+									        	  	 <select class="form-control selectpicker expertpicker">
+									         		      <option select>Year</option>
+									         		      <option>2</option>
+									         		      <option>3</option>
+									         		      <option>4</option>
+									         		      <option>5</option>
+									         		    </select>
+									        	  	 
+					  	 			         		
+									        	  </div>									         	 
+							        	    </div>	
+				        	  	  
+				        	  </div>
+
+				        	   <div class="col-xs-2" style="text-align: center;margin-top: 34px;">
+				        	   		
+				        	  <span style="font-size:15px">To </span>
+				        	   </div>
+				        	  <div class="col-xs-5 form-group">
+
+				        	  		<div class="row">
+									        	  <div class="col-xs-6 form-group">
+									        	  	 <label for="exampleInputEmail1" style="visibility:hidden">second</label>
+									        	  	 <select class="form-control selectpicker expertpicker">
+									         		      <option select>Month</option>
+									         		      <option>2</option>
+									         		      <option>3</option>
+									         		      <option>4</option>
+									         		      <option>5</option>
+									         		    </select>
+									        	  	  
+									        	  </div>
+									        	  <div class="col-xs-6 form-group">
+									        	  	 <label for="exampleInputEmail1" style="visibility:hidden">second</label>
+									        	  	 <select class="form-control selectpicker expertpicker">
+									         		      <option select>Year</option>
+									         		      <option>2</option>
+									         		      <option>3</option>
+									         		      <option>4</option>
+									         		      <option>5</option>
+									         		    </select>
+									        	  	 
+					  	 			         		
+									        	  </div>									         	 
+							        	    </div>	
+
+				        	  	 
+  	 			         		
+				        	  </div>									         	 
+				        	</div>	
+							<center>
+				        	<button type="submit" class="btn btn-lg btn-red " style="width: 35%;font-size: 15px;height: 41px;">CONTINUE
+									         	</button></center>
+
+				        </form>
+				      </div>
+				    </div>
+				  </div>
+
+
+
+
+				  <div class="panel expert_panel ">
+				    <div class="panel-heading" >
+				      <h4 class="panel-title">
+				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#expert_panel_3">
+				        <span class="title" >EDUCATION</span>
+						<span class="caret pull-right"></span>
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="expert_panel_3" class="panel-collapse collapse">
+				      <div class="panel-body">
+				        <ul class="list-item">
+				        	<li>111</li>
+				        	<li class="active">222</li>
+				        	<li><a href="#">3</a></li>
+				        	<li><a href="#">2</a></li>
+				        </ul>
+				      </div>
+				    </div>
+				  </div>
+
+
+
+
+				    <div class="panel expert_panel ">
+				      <div class="panel-heading" >
+				        <h4 class="panel-title">
+				          <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#expert_panel_4">
+				          <span class="title" >SKILLS</span>
+				  		<span class="caret pull-right"></span>
+				          </a>
+				        </h4>
+				      </div>
+				      <div id="expert_panel_4" class="panel-collapse collapse">
+				        <div class="panel-body">
+				          <ul class="list-item">
+				          	<li>111</li>
+				          	<li class="active">222</li>
+				          	<li><a href="#">3</a></li>
+				          	<li><a href="#">2</a></li>
+				          </ul>
+				        </div>
+				      </div>
+				    </div>
+				</div>
+			</div>
 	  	</div>
 	  	<!-- -->
 	  </div>
@@ -548,7 +771,12 @@
 				    </div>
 				    <div id="collapseOne" class="panel-collapse collapse">
 				      <div class="panel-body">
-				        1. desc
+				        <ul class="list-item">
+				        	<li><a href="#">1</a></li>
+				        	<li class="active"><a href="#">1</a></li>
+				        	<li><a href="#">3</a></li>
+				        	<li><a href="#">2</a></li>
+				        </ul>
 				      </div>
 				    </div>
 				  </div>
@@ -564,10 +792,10 @@
 				    <div id="collapseTwo" class="panel-collapse collapse">
 				      <div class="panel-body">
 				        <ul class="list-item">
-				        	<li>1</li>
-				        	<li class="active">2</li>
-				        	<li>2</li>
-				        	<li>2</li>
+				        	<li><a href="#">1</a></li>
+				        	<li class="active"><a href="#">1</a></li>
+				        	<li><a href="#">3</a></li>
+				        	<li><a href="#">2</a></li>
 				        </ul>
 				      </div>
 				    </div>
@@ -583,7 +811,12 @@
 				    </div>
 				    <div id="collapseThree" class="panel-collapse collapse">
 				      <div class="panel-body">
-				        Anim pariatur cliche reprehenderit, 
+				        <ul class="list-item">
+				        	<li>111</li>
+				        	<li class="active">222</li>
+				        	<li><a href="#">3</a></li>
+				        	<li><a href="#">2</a></li>
+				        </ul>
 				      </div>
 				    </div>
 				  </div>
@@ -732,13 +965,19 @@
 
     <script type="text/javascript">
     	$(function () {
-    	$('#tab_outer a:last').tab('show');
-    	$('#tab_inner li:eq(5) a').tab('show');
+    	$('#tab_outer a:first').tab('show');
+    	$('#tab_inner li:eq(0) a').tab('show');
   		});
   		function show_back_tab()
   		{
   			$('#tab_outer a:first').tab('show');
-  			$('#tab_inner li:eq(2) a').tab('show');
+  			
+  		}
+  		function select_tab2(tab)
+  		{
+  			
+  			$('#tab_outer a:last').tab('show');
+    		$('#tab_inner li:eq('+tab+') a').tab('show');
   		}
     </script>
 
