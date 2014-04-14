@@ -1,0 +1,174 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+
+body
+{
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+}
+
+.container
+{
+	width: 960px;
+	
+}
+.btn-default,.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default
+{
+	background-color: #71a329;
+	border: 0;
+	border-radius: 0
+}
+.btn-launching
+{
+	width: 85%;
+	height: 50px;
+	color: #FFF;
+	padding: 15px;
+}
+
+.navbar{
+	padding-left: 100px;
+	padding-right: 100px;
+	background-color: #fff;
+	border: 0;
+	margin-bottom: 0;
+
+}
+
+.navbar-nav
+{
+	margin-top: 30px;
+}
+
+.navbar-default .navbar-nav > li > a
+{
+	color: #4e5b61;
+	font-size: 16px;
+}
+#logo img
+{
+	width: 70%;
+}
+
+.box
+{
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center; 
+}
+.box p
+{
+	font-weight: 400;
+}
+
+
+.box1
+{
+	background-image: url('../img/box2.jpg');
+	padding-top: 100px;
+	height: 500px;
+	color: #FFF;
+	font-weight: 400;
+}
+
+.box1 .play-store
+{
+	width: 40%;
+	padding: 10px;
+	margin: 10px 20%;
+}
+
+
+.box2
+{
+	padding-top: 50px;
+	margin-bottom: 50px;
+	color: #4e5b61;
+	border-bottom: 1px solid #cacdcf;
+}
+
+
+
+.box3
+{
+	color: #FFF;
+	padding-top: 120px;
+	background-image: url('../img/box3.jpg');
+	height: 500px;
+
+}
+
+.box3 h1
+{
+	margin-bottom: 25px;
+}
+
+.box3 input[type="text"]
+{
+	height: 60px;
+	font-size: 15px;
+	padding-left: 15px;
+	background-color: rgba(255,255,255,.8);
+	border:0;
+	margin: 5px;
+	border-radius: 0;
+}
+
+
+.box3 input[type="submit"],input[type="button"],button
+{
+	width: 30%;
+	height: 50px;
+	font-family: Lato;
+	font-weight: 400;
+	font-size: 1.3em;
+	color: #fff;
+	background-color: rgba(5,126,186,.8);
+	border:0;
+	margin: 5px;
+	border-radius: 0;
+	margin-right: 0;
+	padding-right: 0;
+}
+
+
+.box4
+{
+	padding-top: 50px;
+	height: 300px;
+	border-bottom: 1px solid #cacdcf;
+	color: #4e5b61;
+	font-size: 12px;
+}
+
+.box4 h2
+{
+	margin-top: 0;
+}
+.box4 a
+{
+	/*text-decoration: none;*/
+	color: inherit;
+}
+
+.profile .name
+{
+	font-size: 14px;
+	font-weight: 800;
+}
+
+.profile
+{
+	padding-top: 4px;
+}
+
+footer
+{
+	height: 50px;
+	padding-top: 20px;
+	font-weight: 400;
+	font-size: 10px;
+	text-align: center;
+}
+
+
