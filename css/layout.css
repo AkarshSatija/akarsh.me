@@ -13,7 +13,7 @@ body{
   margin-top:50px;
 }
 body.home{
-	background-image:url(../img/background.gif);
+	background-image:url(../img/background_old.gif);
 	background-attachment:fixed;
 }
 .green_title{
