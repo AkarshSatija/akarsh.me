@@ -64,9 +64,14 @@
       <div class="nav-collapse">
         <ul class="nav pull-right">
           <li><a href="/about.php" onClick="_gaq.push(['_trackEvent', 'Navigation', 'Go', 'About']);">About</a></li>
+          <!-- <li><a href="/work.php" onClick="_gaq.push(['_trackEvent', 'Navigation', 'Go', 'Work']);">Work</a></li> -->
+          <li><a target="_blank" href="/resume.pdf" onClick="_gaq.push(['_trackEvent', 'Navigation', 'Go', 'Resume']);">Resume</a></li>
           <!--li><a href="/connect">Contact</a></li-->
         </ul>
       </div>
     </div>
   </div>
 </div>
+
+
+
