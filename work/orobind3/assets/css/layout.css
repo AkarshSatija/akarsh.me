@@ -304,6 +304,9 @@ header .navbar-nav>li>a
 
 footer{
 	background-color: #e8e8e8;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 
 }
 .footermenu
@@ -343,3 +346,91 @@ footer{
 .carousel-indicators {
     bottom: -50px;
 }
+
+/* page2 */
+
+
+.search-meta-info
+{
+	padding-top: 150px;
+	padding-bottom: 25px;
+	text-align: center;
+}
+.search-meta-info h4
+{
+	margin-top: 0;
+}
+.search-meta-info h2
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.search-panel
+{
+	
+	background-image: url('../img/back_jpg.jpg');
+	background-size:100% auto;
+	background-repeat: no-repeat;
+	/*background-position: center;*/
+	background-color: rgb(194, 158, 105);
+	
+
+}
+.search-fields
+{
+	/*margin: auto 10%;*/
+	background-color: rgba(0,0,0,.3);
+	padding: 5px;
+
+}
+
+.search-fields .form-control, .search-fields .btn
+{
+
+	display: inline-block;
+	width: 18%;
+	border-radius: 0;
+	margin: 2px 10px;
+	height: 34px;
+
+}
+
+.search-fields .form-control::-webkit-input-placeholder { font-family: Lato-Bold; font-size: 16px; }
+.search-fields .form-control::-moz-placeholder { font-family: Lato-Bold; font-size: 16px; } /* firefox 19+ */
+.search-fields .form-control:-ms-input-placeholder  { font-family: Lato-Bold; font-size: 16px; }/* ie */
+
+.search-fields .btn
+{
+
+	background-color: #00b4ff;
+	color: #FFF;
+	padding: inherit;
+	font-size: 20px;
+	font-family: LatoBlack;
+}
+.search-fields span.input-label
+{
+	font-family: LatoBlack;
+	font-size: 16px;
+	vertical-align: middle;
+}
+
+/* Fixing footer */
+@media (min-width: 1200px) and (max-width: 1340px)
+{
+	.footermenu {
+		width: 56%;
+	}
+}
+
+@media (min-width: 975px) and (max-width: 1199px)
+{
+	.footermenu {
+		width: 70%;
+	}
+}
+
+
+
+
