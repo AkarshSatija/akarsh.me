@@ -1,3 +1,19 @@
+
+<meta name="google-site-verification" content="PA5IEJXW8SM_1i8HTqXrS_tBQbzKsb_9XV9FfyBJwxo" />
+<meta name="readability-verification" content="5Y3UKAqq6xhrD8QjdtduLegpyjrQHh3u9LEhJ3dK"/>
+<meta name="pocket-site-verification" content="d9e32f199531d56694e4a70ce9c0ec" />
+
+<script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'>
+</script>
+<script type='text/javascript'>
+GS_googleAddAdSenseService("ca-pub-6747800463134716");
+GS_googleEnableAllServices();
+</script>
+
+<script type='text/javascript'>
+GA_googleFetchAds();
+</script>
+
 <script type='text/javascript'>
 var googletag = googletag || {};
 googletag.cmd = googletag.cmd || [];
