@@ -1,0 +1,430 @@
+/* General */
+
+.theme h1 {
+	font-size: 30px;
+	line-height: 28px;
+}
+
+.theme h2 {
+	font-size: 30px;
+	line-height: 28px;
+}
+
+.theme h3 {
+	font-family: "Quattrocento Sans";
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.theme h4 {
+	font-family: "Quattrocento Sans";
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.theme p {
+	font-family: "Quattrocento";
+	font-size: 16px;
+	line-height: 26px;
+}
+
+.theme span {
+	font-family: "Quattrocento";
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.theme .button {
+	font-size: 16px;
+}
+
+/* Sticky nav */
+
+.theme > nav {
+	z-index: 5;
+}
+
+.theme > nav .hamburger {
+	display: block;
+	float: left;
+	color: #fff;
+	width: 82%;
+	height: 10px;
+	margin: 0 5%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background: url(../../img/icon/menu-light.png) no-repeat left;
+}
+
+.theme > nav .hamburger small {
+	line-height: 10px;
+	height: 10px;
+	margin-top: 1px;
+	float: left;
+	margin-left: 40px;
+}
+
+.theme > nav div {
+	display: none;
+	width: 100%;
+	height: auto;
+	background: #1E1F20;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+.theme > nav div a {
+	display: block;
+	float: left;
+	width: 90%;
+	border-radius: 0;
+	padding: 20px 5%;
+}
+
+/* Content */
+
+.theme section.background.image {
+	background-attachment: scroll;
+	}
+
+.theme .content {
+	width: 90% !important;
+	margin: 0 5% 40px 5% !important;
+}
+
+.theme .description {
+	width: 90%;
+	margin: 60px 5% 40px 5%;
+}
+
+.theme .description h1,
+.theme .description p {
+	margin-top: 20px;
+	text-align: center;
+}
+
+/* .theme .introduction */
+
+.theme .introduction nav {
+	display: none;
+}
+
+.theme .introduction .content {
+	width: 90% !important;
+	margin: 80px 5% 40px 5% !important;
+	text-align: center !important;
+	height: auto;
+	float: left;
+	clear: both;
+}
+
+.theme .introduction .content .text-wrapper {
+	width: 100% !important;
+}
+
+.theme .introduction .content .text-wrapper .text {
+	float: left;
+	width: 100%;
+}
+
+.theme .introduction .content img {
+	float: none !important;
+	margin: 0 !important;
+}
+
+.theme .introduction .content h1,
+.theme .introduction .content p {
+	width: 100% !important;
+	text-align: center !important;
+	float: left;
+}
+
+.theme .introduction .content p {
+	margin-top: 4px;
+}
+
+.theme .introduction .continue {
+	display: none;
+}
+
+.theme .introduction .continue:hover {
+	height: 30px !important;
+	bottom: 0 !important;
+}
+
+/* .theme .introduction */
+
+.theme .custom .content {
+	width: 90% !important;
+	margin: 40px 5% !important;
+}
+
+.theme .custom .content .custom-content {
+	min-width: 0 !important;
+}
+
+.theme .custom .content h2,
+.theme .custom .content p,
+.theme .custom .content span,
+.theme .custom .content ol,
+.theme .custom .content ul,
+.theme .custom .content img {
+	width: 100% !important;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+.theme .custom .content > div,
+.theme .custom .content .col,
+.theme .custom .content .col > div {
+	min-width: auto !important;
+	width: 100% !important;
+	padding: 0 !important;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+	text-align: center !important;
+}
+
+.theme .custom .content .col > div .button {
+	width: 100%;
+	text-align: center;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/* Experience */
+
+.theme .experience .timeline {
+	margin-bottom: 0px;
+}
+
+.theme .experience .expand {
+	width: 90%;
+	margin: 0 5% 40px 5%;
+	padding-top: 60px;
+}
+
+.theme .experience .expand .experience-full {
+	margin: 20px 0 0 0;
+	width: 100%;
+	text-align: center;
+}
+
+.theme .experience .expand .experience-full img {
+	float: none;
+	position: static;
+	margin-top: 20px;
+}
+
+.theme .experience .expand .experience-full h2,
+.theme .experience .expand .experience-full h3,
+.theme .experience .expand .experience-full p {
+	float: left;
+	text-align: center;
+	width: 100%;
+}
+
+/* theme .education */
+
+.theme .education .content {
+	width: 90%;
+	margin: 40px 5%;
+}
+
+.theme .education .content .school {
+	width: 100% !important;
+	float: left;
+	padding: 0 !important;
+	margin: 0 0 40px 0 !important;
+	position: relative;
+	box-shadow: none;
+}
+
+.theme .education .content .school:last-child {
+	margin-bottom: 0;
+}
+
+.theme .education .content .school h3,
+.theme .education .content .school h4 {
+	width: 70% !important;
+	float: left;
+}
+
+.theme .education .content .school small,
+.theme .education .content .school h3,
+.theme .education .content .school h4 {
+	float: left;
+	width: 100%;
+	text-align: left !important;
+}
+
+.theme .education .content .school img {
+	position: absolute;
+	right: 0;
+	top: 0 !important;
+	margin: 0 !important;
+}
+
+.theme .education .content .school span {
+	float: left;
+	width: 100%;
+	text-align: left !important;
+}
+
+/* Skills */
+
+.theme .list .content {
+	margin-top: 0 !important;
+	text-align: center; 
+}
+
+.theme .list .content .item {
+	width: 100% !important;
+	height: auto !important;
+	padding: 10px 0 !important;
+	line-height: 40px !important;
+	border-radius: 0 !important;
+	float: none;
+	margin: 0 0 20px 0;
+}
+
+.theme .list .content .item:first-child {
+	margin-top: 0;
+}
+
+.theme .list .content .item h2,
+.theme .list .content .item h3 {
+	text-align: center;
+	margin: 0 !important;
+}
+
+/* theme .portfolio */
+
+.theme .portfolio .description {
+	margin-bottom: 0;
+}
+
+.theme .portfolio .content {
+	margin-top: 0;
+	padding-top: 40px;
+}
+
+.theme .portfolio .expand {
+	width: 90%;
+	margin: 0 5% 40px 5%;
+	padding-top: 0;
+}
+
+.theme .portfolio .expand .project {
+	margin-top: 80px;
+}
+
+.theme .portfolio .expand .project img {
+	display: none !important;
+}
+
+.theme .portfolio .expand .project .info {
+	width: 100%;
+}
+
+/* theme .testimonials */
+
+.theme .testimonials .content .testimonial {
+	margin: 0 !important;
+	text-align: center;
+}
+
+.theme .testimonials .content .testimonial img {
+	float: none;
+}
+
+.theme .testimonials .content .testimonial h3,
+.theme .testimonials .content .testimonial h4,
+.theme .testimonials .content .testimonial span {
+	width: 100%;
+	text-align: center;
+}
+
+/* Gallery */
+
+.theme .gallery .content {
+}
+
+.theme .gallery .image {
+	height: 200px;
+	padding: 0;
+	line-height: 220px;
+	text-align: center;
+}
+
+/* theme .contact */
+
+.theme .contact .content {
+	width: 90%;
+	margin: 40px 5%;
+	float: left;
+}
+
+.theme .contact .content .col {
+	width: 100%;
+	margin-top: 40px;
+}
+
+.theme .contact .content .description {
+	float: left;
+	margin: 0;
+}
+
+.theme .contact .content .description h2,
+.theme .contact .content .description p {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
+.theme .contact .content .col .info > div {
+	float: left;
+	width: 100%;
+	padding: 0;
+	line-height: 40px;
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+.theme .contact .content .info > div h3 {
+	float: left;
+	width: auto !important;
+	text-align: left;
+	font-size: 18px;
+	margin-left: 40px;
+}
+
+.theme .contact .content .info > div h3 a {
+	color: inherit;
+}
+
+.theme .contact .content form {
+	width: 100%;
+	margin-top: 20px;
+}
+
+.theme .contact .content form input,
+.theme .contact .content form textarea {
+	width: 90%;
+	padding: 20px 5%;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.theme .contact .content form textarea {
+	min-width: 90%;
+	max-width: 90%;
+}
+
+.theme .contact .content form input[type="submit"] {
+	width: 100% !important;
+	margin-top: 10px;
+	border-radius: 0;
+}
+

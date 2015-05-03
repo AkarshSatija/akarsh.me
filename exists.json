@@ -1,1 +1,0 @@
-twttr.setFriendshipExists({"error":"Following information is not available for protected users without authentication.","request":"\/1\/friendships\/exists.json?user_a=121918001&screen_name_b=Ravi_Suhag&callback=twttr.setFriendshipExists"})

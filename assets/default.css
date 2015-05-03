@@ -1,0 +1,19 @@
+/*
+Scheme: Dark grey;
+*/
+
+.theme > nav,
+.theme .button,
+.theme section.background.color:before,
+.theme .contact .content form input[type="submit"] {
+	background: #1E1F20;
+}
+
+.theme > nav div a:hover {
+	background: rgba(255,255,255,0.2) !important;
+}
+
+.theme h1 a, .theme h2 a, .theme h3 a, .theme h4 a, .theme p a, .theme span a, .theme small a {
+	color: #1E1F20;
+	text-decoration: underline;
+}
