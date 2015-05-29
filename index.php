@@ -113,12 +113,15 @@
                         <p>Get in touch with me if you would like to do business together, share an idea or just say hello.</p>
                     </div>
                     <div class="info">
-                        <div class="location">
-                            <h3>New Delhi Area, India</h3></div>
+                        <!-- <div class="location">
+                            <h3>New Delhi Area, India</h3>
+                        </div>
                         <div class="phone">
-                            <h3><a href="tel:9017050076">9017050076</a></h3></div>
+                            <h3><a href="tel:9017050076">9017050076</a></h3>
+                        </div>
                         <div class="email">
-                            <h3><a href="mailto:akarsh.satija@gmail.com">akarsh.satija@gmail.com</a></h3></div>
+                            <h3><a href="mailto:akarsh.satija@gmail.com">akarsh.satija@gmail.com</a></h3>
+                        </div> -->
                     </div>
                     <div class="social">
                         <a class="facebook" onClick="_gaq.push(['_trackEvent', 'Social', 'Go', 'facebook']);" href="http://facebook.com/satija.akarsh" target="_blank"></a>
