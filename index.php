@@ -1,3 +1,4 @@
+<?php echo '<!-- new -->'; ?>
 <!DOCTYPE html>
 <html>
 
@@ -100,7 +101,7 @@
                             <br>
                             <br> With a <b>BTech in CompSci</b>, He is already adept with various technology Stacks in Backend as well as FrontEnd, and is a sure shot to master many more in time! He plied his trade of web development at <b><a href="solomosalsa.com" target="_blank" onClick="_gaq.push(['_trackEvent', 'Link', 'Click', 'solomosalsa']);">SoLoMoSalsa</a></b> before joining <b><a onClick="_gaq.push(['_trackEvent', 'Link', 'Click', 'lbb']);" target="_blank" href="https://lbb.in">Little Black Book</a></b>
                             <br>
-                            <br> When Akarsh is not dreaming in algorithms and scripting, He is found contributing at different Tech events. 
+                            <br> When Akarsh is not dreaming in algorithms and scripting, He is found contributing at different Tech events.
                             <br>He is working as a <b>Full Stack Lead at Little Black Book</b> and answers to all the complicated engineering problems thrown at him there. He is also adept at DevOps and building WebApps.
                     </div>
                 </div>
@@ -116,7 +117,7 @@
                         <p>Get in touch with me if you would like to do business together, share an idea or just say hello.</p>
                     </div>
                     <div class="info">
-                        <!-- <div class="location">
+                        <?php /* <div class="location">
 <h3>New Delhi Area, India</h3>
 </div>
 <div class="phone">
@@ -124,7 +125,7 @@
 </div>
 <div class="email">
 <h3><a href="mailto:akarsh.satija@gmail.com">akarsh.satija@gmail.com</a></h3>
-</div> -->
+</div> */ ?>
                     </div>
                     <div class="social">
                         <a class="facebook" onClick="_gaq.push(['_trackEvent', 'Social', 'Go', 'facebook']);" href="http://facebook.com/satija.akarsh" target="_blank"></a>
