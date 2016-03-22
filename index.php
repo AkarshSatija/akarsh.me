@@ -62,7 +62,7 @@
         </div>
     </nav>
     <section class="introduction background color dark image quarter-opacity " style="  height: 100%;" id="5538d9444a3a6300034008dd">
-        <div id="particles-js" style="position: absolute;background-image:url(//s3.amazonaws.com/branded.me/gallery/architecture/16.jpg)">
+        <div id="particles-js" style="position: absolute;background-image:url(./assets/img/16.jpg)">
         </div>
         <div class="wrapper home">
             <nav style="margin-left: -85%;">
@@ -89,7 +89,7 @@
         </div>
     </section>
     <section class="about custom dark image quarter-opacity " id="about">
-        <div style="position: absolute;background-image:url(https://s3.amazonaws.com/branded.me/gallery/architecture/7.jpg)">
+        <div style="position: absolute;background-image:url(./assets/img/7.jpg)">
         </div>
         <div class="wrapper">
             <div class="clearfix content one-col">
@@ -108,7 +108,7 @@
             </div>
         </div>
     </section>
-    <section class="contact background color dark image quarter-opacity " id="contact" style="background-image:url(https://s3.amazonaws.com/branded.me/gallery/architecture/9.jpg)">
+    <section class="contact background color dark image quarter-opacity " id="contact" style="background-image:url(./assets/img/9.jpg)">
         <div class="wrapper">
             <div class="clearfix content">
                 <div class="">
