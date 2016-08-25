@@ -9,6 +9,7 @@
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="Akarsh Satija is Code Chef. View Akarsh&#39;s Resume, Biography and more. Get in touch with Akarsh today." name="description">
     <meta content="summary_large_image" name="twitter:card">
+    <meta name="google-site-verification" content="psXXXk52vCqjJ1IA0_0ZmfbPNigNqqNUn0iotbrqxeU" />
     <meta content="Akarsh Satija | Code Chef | Bio &amp; Portfolio" name="twitter:title">
     <meta content="Akarsh Satija is | Code Chef. View Akarsh&#39;s Resume, Biography and more. Get in touch with Akarsh today." name="twitter:description">
     <meta content="./assets/0_-76t66yd1VA-DtGJBDEy_bjIqUm-mzCJnRZ0hFf5pffAoqrBqxbYCDHX02P.jpg" name="twitter:image">
