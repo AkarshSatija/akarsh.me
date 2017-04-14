@@ -41,12 +41,24 @@
 
 
 	<link href="shared/img/favicon.png" rel="icon" type="image/png">
-	<link href="./assets/css.css" rel="stylesheet" type="text/css">
-	<link href="./assets/reset.css" rel="stylesheet" type="text/css">
-	<link href="./assets/clearfix.css" rel="stylesheet" type="text/css">
-	<link href="./assets/style.css" rel="stylesheet" type="text/css">
-	<link href="./assets/mobile.css" media="(max-width: 800px)" rel="stylesheet" type="text/css">
-	<link href="./assets/default.css" rel="stylesheet" type="text/css">
+
+	<script>
+	(function(i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		i[r] = i[r] || function() {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date();
+		a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m)
+	})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+	ga('create', 'UA-46142311-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+
 	<style>
 	.theme .introduction .content {
 		margin-top: 70%;
@@ -165,22 +177,7 @@
 		</div>
 	</section>
 	<script src="./assets/jquery.min.js"></script>
-	<script>
-	(function(i, s, o, g, r, a, m) {
-		i['GoogleAnalyticsObject'] = r;
-		i[r] = i[r] || function() {
-			(i[r].q = i[r].q || []).push(arguments)
-		}, i[r].l = 1 * new Date();
-		a = s.createElement(o),
-			m = s.getElementsByTagName(o)[0];
-		a.async = 1;
-		a.src = g;
-		m.parentNode.insertBefore(a, m)
-	})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-	ga('create', 'UA-46142311-1', 'auto');
-	ga('send', 'pageview');
-	</script>
 	<script type="text/javascript">
 	//smooth scroll
 	$(function() {
@@ -198,6 +195,13 @@
 		});
 	});
 	</script>
+	<link href="./assets/css.css" rel="stylesheet" type="text/css">
+	<link href="./assets/reset.css" rel="stylesheet" type="text/css">
+	<link href="./assets/clearfix.css" rel="stylesheet" type="text/css">
+	<link href="./assets/style.css" rel="stylesheet" type="text/css">
+	<link href="./assets/mobile.css" media="(max-width: 800px)" rel="stylesheet" type="text/css">
+	<link href="./assets/default.css" rel="stylesheet" type="text/css">
+
 	<link rel="stylesheet" media="screen" href="./bower_components/particles.js/demo/css/style.css">
 	<script src="./bower_components/particles.js/particles.js"></script>
 	<script src="./bower_components/particles.js/demo/js/app.js"></script>
