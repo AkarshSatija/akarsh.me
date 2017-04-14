@@ -26,8 +26,9 @@
 	<meta name="twitter:title" content="Akarsh Satija | Code Chef | Bio &amp; Portfolio" >
 	<meta name="twitter:description" content="Akarsh Satija | Code Chef. View Akarsh&#39;s Resume, Biography and more. Get in touch with Akarsh." >
 
+	<meta property="fb:app_id" content="134872726616914"/>
 	<meta property="og:url" content="https://akarsh.me/" />
-	<meta property="og:type" content="Portfolio" />
+	<meta property="og:type" content="profile" />
 	<meta property="og:title" content="Akarsh Satija" />
 	<meta property="og:description" content="Code Chef | Hacker | Webifier | Geek | All time Developer" />
 	<meta property="og:image" content="https://akarsh.me/akarsh.jpg" />
