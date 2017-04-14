@@ -30,7 +30,7 @@
 	<meta property="og:type" content="Portfolio" />
 	<meta property="og:title" content="Akarsh Satija" />
 	<meta property="og:description" content="Code Chef | Hacker | Webifier | Geek | All time Developer" />
-	<meta property="og:image" content="http://ravisuhag.com/assets/images/ravisuhag.png" />
+	<meta property="og:image" content="https://akarsh.me/akarsh.jpg" />
 
 
 	<link href="shared/img/favicon.png" rel="icon" type="image/png">
