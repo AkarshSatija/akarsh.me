@@ -96,7 +96,7 @@
 			<a href="#about" onClick="_gaq.push(['_trackEvent', 'NAV', 'Go', 'About']);"><small>About</small></a>
 			<a href="#contact" onClick="_gaq.push(['_trackEvent', 'NAV', 'Go', 'Contact']);"><small>Contact</small></a>
 			<!--  <a href="./resume.pdf" target="_blank" onClick="_gaq.push(['_trackEvent', 'NAV', 'Go', 'Resume']);"><small>Resume</small></a> -->
-			<a target="_blank" href="https://akarshsatija.wordpress.com/" onClick="_gaq.push(['_trackEvent', 'NAV', 'Go', 'BLOG']);"><small>Blog</small></a>
+			<a target="_blank" href="https://medium.com/akarshsatija" onClick="_gaq.push(['_trackEvent', 'NAV', 'Go', 'BLOG']);"><small>Blog</small></a>
 		</div>
 	</nav>
 	<section class="introduction background color dark image quarter-opacity " style="  height: 100%;" id="5538d9444a3a6300034008dd">
