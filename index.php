@@ -41,6 +41,9 @@
 
 
 	<link href="shared/img/favicon.png" rel="icon" type="image/png">
+	<link href="./assets/css/css.css" rel="stylesheet" type="text/css">
+	<link href="./assets/css/reset.css" rel="stylesheet" type="text/css">
+	<link href="./assets/css/style.css" rel="stylesheet" type="text/css">
 
 	<script>
 	(function(i, s, o, g, r, a, m) {
@@ -59,35 +62,6 @@
 	ga('send', 'pageview');
 	</script>
 
-	<style>
-	.theme .introduction .content {
-		margin-top: 70%;
-	}
-	.about p {
-		width: 100% !important;
-		margin: 0 !important;
-	}
-	.home.wrapper {
-		position: absolute !important;
-		z-index: 3 !important;
-		margin-left: -170px;
-		height: 100%;
-		left: 50%;
-		padding-top: 10px;
-	}
-	a {
-		text-decoration: none !important;
-	}
-	@media screen and (max-width: 800px) {
-		.home.wrapper {
-			margin-left: 0px;
-			width: 100%;
-			left: 0;
-			padding-top: 10px;
-			height: auto;
-		}
-	}
-	</style>
 </head>
 
 <body class="theme">
@@ -176,32 +150,23 @@
 			</div>
 		</div>
 	</section>
-	<script src="./assets/jquery.min.js"></script>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script type="text/javascript">
-	//smooth scroll
-	$(function() {
-		$('a[href*=#]:not([href=#])').click(function() {
-			if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-				var target = $(this.hash);
-				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-				if (target.length) {
-					$('html,body').animate({
-						scrollTop: target.offset().top
-					}, 1000);
-					return false;
-				}
-			}
-		});
+	$(document).ready(function(){
+	  $("a").on('click', function(event) {
+	    if (this.hash !== "") {
+	      event.preventDefault();
+	      var hash = this.hash;
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 800, function(){
+	        window.location.hash = hash;
+	      });
+	  });
 	});
 	</script>
-	<link href="./assets/css.css" rel="stylesheet" type="text/css">
-	<link href="./assets/reset.css" rel="stylesheet" type="text/css">
-	<link href="./assets/clearfix.css" rel="stylesheet" type="text/css">
-	<link href="./assets/style.css" rel="stylesheet" type="text/css">
-	<link href="./assets/mobile.css" media="(max-width: 800px)" rel="stylesheet" type="text/css">
-	<link href="./assets/default.css" rel="stylesheet" type="text/css">
 
+	<link href="./assets/css/mobile.css" media="(max-width: 800px)" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" media="screen" href="./bower_components/particles.js/demo/css/style.css">
 	<script src="./bower_components/particles.js/particles.js"></script>
 	<script src="./bower_components/particles.js/demo/js/app.js"></script>

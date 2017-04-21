@@ -2,6 +2,21 @@
 
 /* General */
 
+.clearfix:after,
+body > div:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+* html .clearfix,
+* html body > div {
+    height: 1%;
+}
+
+
 body { overflow-x:hidden; }
 
 .theme * {
@@ -42,25 +57,6 @@ html, .theme{
 	line-height: 44px;
 }
 
-.theme h3 {
-	font-family: 'Quattrocento Sans', sans-serif;
-	font-size: 18px;
-	line-height: 28px;
-	font-weight: bold;
-}
-
-.theme h4 {
-	font-family: 'Quattrocento Sans', sans-serif;
-	font-size: 14px;
-	line-height: 24px;
-}
-
-.theme span {
-	font-family: 'Quattrocento', serif;
-	font-size: 14px;
-	line-height: 24px;
-}
-
 .theme small {
 	font-family: 'Quattrocento Sans', sans-serif;
 	font-size: 12px;
@@ -68,36 +64,6 @@ html, .theme{
 	text-transform: uppercase;
 	font-weight: bold;
 	line-height: 12px;
-}
-
-.theme .button {
-	display: block;
-	font-family: 'Quattrocento Sans', sans-serif;
-	font-size: 18px;
-	font-weight: bold;
-	padding: 20px 40px;
-	color: #fff;
-	float: left;
-	background: #505152;
-	-webkit-transition: opacity 0.2s;
-    transition: opacity 0.2s;
-}
-
-.theme ul {
-	list-style-type: square !important;
-	margin-left: 20px;
-	font-family:inherit;
-}
-
-.theme ol {
-	list-style-type: decimal !important;
-	margin-left: 20px;
-	font-family:inherit;
-}
-
-.theme ul li, .theme ol li {
-	display: list-item !important;
-	font-family:inherit;
 }
 
 .theme .custom-content,
@@ -116,41 +82,6 @@ html, .theme{
 	font-family:inherit!important;
 }
 
-.theme .button.left
-{
-	float:left;
-}
-
-.theme .button.right
-{
-	float:right;
-}
-
-.theme .button.center
-{
-	display: inline-block;
-	float: none;
-}
-
-.theme .button:hover {
-	opacity: 0.8;
-}
-
-.theme .button.large {
-	padding: 20px 40px;
-	font-size: 18px;
-}
-
-.theme .button.medium {
-	padding: 15px 30px;
-	font-size: 16px;
-}
-
-.theme .button.small {
-	padding: 10px 20px;
-	font-size: 14px;
-}
-
 .theme a {
 	cursor: pointer;
 	color: #1E1F20;
@@ -160,6 +91,7 @@ html, .theme{
 /* Sticky nav */
 
 .theme > nav {
+	background-color: #111;
 	height: auto;
 	width: 100%;
 	box-shadow: 0 1px 2px rgba(0,0,0,0.25);
@@ -232,28 +164,10 @@ html, .theme{
 	background-color: #1E1F20!important;
 }
 
-.theme section.background.light:before {
-	background-color: #ffffff!important;
-}
 
-.theme section.background.full-opacity:before {
-	opacity: 0!important;
-}
-
-.theme section.background.threeqs-opacity:before {
-	opacity: 0.3!important;
-}
-
-.theme section.background.half-opacity:before {
-	opacity: 0.5!important;
-}
 
 .theme section.background.quarter-opacity:before {
 	opacity: 0.75!important;
-}
-
-.theme section.background.lowest-opacity:before {
-	opacity: 0.9!important;
 }
 
 .theme section.background.color:before {
@@ -265,15 +179,6 @@ html, .theme{
 	position: relative;
 }
 
-.theme section.background.light h1,
-.theme section.background.light h2,
-.theme section.background.light h3,
-.theme section.background.light h4,
-.theme section.background.light p,
-.theme section.background.light span,
-.theme section.background.light small {
-	color: #1E1F20 !important;
-}
 
 .theme section.background.dark h1,
 .theme section.background.dark h2,
@@ -286,10 +191,6 @@ html, .theme{
 	text-shadow: 0 1px 2px rgba(0,0,0,0.25) !important;
 }
 
-.theme section.background.dark .button {
-	background-color: #fff;
-	color: #1E1F20;
-}
 
 .theme section.background.dark img {
 	box-shadow: 0 1px 2px rgba(0,0,0,0.25);
@@ -479,11 +380,11 @@ html, .theme{
 }
 
 .theme .introduction.background.light .continue {
-	background-image: url(./img/continue-dark.png) !important;
+	background-image: url('../img/continue-dark.png') !important;
 }
 
 .theme .introduction.background.dark .continue {
-	background-image: url(./img/continue-light.png) !important;
+	background-image: url('../img/continue-light.png') !important;
 }
 
 /* Custom */
@@ -1161,7 +1062,7 @@ html, .theme{
 	color: #fff;
   	text-decoration: none;
 }
-  
+
 
 .theme .contact.background.dark .content .info > div.location {
   background-image: url(./img/location-light.png);
@@ -1199,67 +1100,67 @@ html, .theme{
 
 
 .theme  .content .social a.github {
-	background-image: url(./img/github-dark.png);
+	background-image: url('../img/github-dark.png');
 }
 
 .theme .background.dark .content .social a.github {
-	background-image: url(./img/github-light.png);
+	background-image: url('../img/github-light.png');
 }
 
 .theme  .content .social a.facebook {
-	background-image: url(./img/facebook-dark.png);
+	background-image: url('../img/facebook-dark.png');
 }
 
 .theme .background.dark .content .social a.facebook {
-	background-image: url(./img/facebook-light.png);
+	background-image: url('../img/facebook-light.png');
 }
 
 .theme  .content .social a.twitter {
-	background-image: url(./img/twitter-dark.png);
+	background-image: url('../img/twitter-dark.png');
 }
 
 .theme .background.dark .content .social a.twitter {
-	background-image: url(./img/twitter-light.png);
+	background-image: url('../img/twitter-light.png');
 }
 
 .theme  .content .social a.linkedin {
-	background-image: url(./img/linkedin-dark.png);
+	background-image: url('../img/linkedin-dark.png');
 }
 
 .theme .background.dark .content .social a.linkedin {
-	background-image: url(./img/linkedin-light.png);
+	background-image: url('../img/linkedin-light.png');
 }
 
 .theme  .content .social a.googleplus {
-	background-image: url(./img/googleplus-dark.png);
+	background-image: url('../img/googleplus-dark.png');
 }
 
 .theme .background.dark .content .social a.googleplus {
-	background-image: url(./img/googleplus-light.png);
+	background-image: url('../img/googleplus-light.png');
 }
 
 .theme  .content .social a.instagram {
-	background-image: url(./img/instagram-dark.png);
+	background-image: url('../img/instagram-dark.png');
 }
 
 .theme .background.dark .content .social a.instagram {
-	background-image: url(./img/instagram-light.png);
+	background-image: url('../img/instagram-light.png');
 }
 
 .theme  .content .social a.youtube {
-	background-image: url(./img/youtube-dark.png);
+	background-image: url('../img/youtube-dark.png');
 }
 
 .theme .background.dark .content .social a.youtube {
-	background-image: url(./img/youtube-light.png);
+	background-image: url('../img/youtube-light.png');
 }
 
 .theme  .content .social a.tumblr {
-	background-image: url(./img/tumblr-dark.png);
+	background-image: url('../img/tumblr-dark.png');
 }
 
 .theme .background.dark .content .social a.tumblr {
-	background-image: url(./img/tumblr-light.png);
+	background-image: url('../img/tumblr-light.png');
 }
 
 .theme .contact .content form {
@@ -1373,3 +1274,32 @@ html, .theme{
 	background: #fff !important;
 }
 
+
+
+.theme .introduction .content {
+	margin-top: 70%;
+}
+.about p {
+	width: 100% !important;
+	margin: 0 !important;
+}
+.home.wrapper {
+	position: absolute !important;
+	z-index: 3 !important;
+	margin-left: -170px;
+	height: 100%;
+	left: 50%;
+	padding-top: 10px;
+}
+a {
+	text-decoration: none !important;
+}
+@media screen and (max-width: 800px) {
+	.home.wrapper {
+		margin-left: 0px;
+		width: 100%;
+		left: 0;
+		padding-top: 10px;
+		height: auto;
+	}
+}
