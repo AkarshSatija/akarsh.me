@@ -162,8 +162,8 @@
 	      }, 800, function(){
 	        window.location.hash = hash;
 	      });
+	 	}
 	  });
-	});
 	</script>
 
 	<link href="./assets/css/mobile.css" media="(max-width: 800px)" rel="stylesheet" type="text/css">
