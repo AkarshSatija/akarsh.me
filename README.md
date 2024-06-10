@@ -1,4 +1,4 @@
-akarsh_heroku
+akarsh-me
 =============
 
-akarsh.in
+akarsh.me
