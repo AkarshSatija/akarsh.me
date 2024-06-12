@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <meta http-equiv="refresh" content="0; upi://pay?pa=akarsh.satija@okhdfcbank&pn=Akarsh%20Satija&am=499.00&cu=INR">
+</head>
+<script>
+    function upi_redirect() {
+        console.log("triggered")
+        window.location = "upi://pay?pa=akarsh.satija@okhdfcbank&pn=Akarsh%20Satija&am=499.00&cu=INR";
+    }
+
+    setTimeout(upi_redirect, 100)
+</script>
+
+<body>
+    <a href="upi://pay?pa=akarsh.satija@okhdfcbank&pn=Akarsh%20Satija&am=499.00&cu=INR">Click to Continue...</a>
+</body>
+
+</html>
