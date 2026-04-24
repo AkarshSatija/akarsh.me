@@ -244,7 +244,7 @@ html, .theme{
 	left: 0; right: 0;
 	position: absolute;
 	top: 30px;
-	width: 920px;
+	width: auto;
 	text-align: center;
 }
 
@@ -458,7 +458,7 @@ html, .theme{
 	float: left;
 	width: 680px;
 	margin: 0 120px 40px 120px;
-	text-align:left;
+	text-align: center;
 	display: block;
 }
 
@@ -1030,7 +1030,8 @@ html, .theme{
 .theme .contact .description h2,
 .theme .contact .description p {
 	float: left;
-	text-align: left;
+	width: 100%;
+	text-align: center;
 }
 
 .theme .contact .content .info {
@@ -1083,84 +1084,21 @@ html, .theme{
 	margin-top: 10px;
 }
 
-.theme .content .social a{
-	width: 30px;
-	height: 30px;
+.theme .content .social a {
 	margin: 0 14px 14px 0;
-	background-repeat: no-repeat;
-	background-position: center;
+	font-size: 24px;
+	color: #1E1F20;
 	-webkit-transition: opacity 0.2s;
-    transition: opacity 0.2s;
-    display: inline-block;
+	transition: opacity 0.2s;
+	display: inline-block;
 }
 
 .theme .content .social a:hover {
 	opacity: 0.5;
 }
 
-
-.theme  .content .social a.github {
-	background-image: url('../img/github-dark.png');
-}
-
-.theme .background.dark .content .social a.github {
-	background-image: url('../img/github-light.png');
-}
-
-.theme  .content .social a.facebook {
-	background-image: url('../img/facebook-dark.png');
-}
-
-.theme .background.dark .content .social a.facebook {
-	background-image: url('../img/facebook-light.png');
-}
-
-.theme  .content .social a.twitter {
-	background-image: url('../img/twitter-dark.png');
-}
-
-.theme .background.dark .content .social a.twitter {
-	background-image: url('../img/twitter-light.png');
-}
-
-.theme  .content .social a.linkedin {
-	background-image: url('../img/linkedin-dark.png');
-}
-
-.theme .background.dark .content .social a.linkedin {
-	background-image: url('../img/linkedin-light.png');
-}
-
-.theme  .content .social a.googleplus {
-	background-image: url('../img/googleplus-dark.png');
-}
-
-.theme .background.dark .content .social a.googleplus {
-	background-image: url('../img/googleplus-light.png');
-}
-
-.theme  .content .social a.instagram {
-	background-image: url('../img/instagram-dark.png');
-}
-
-.theme .background.dark .content .social a.instagram {
-	background-image: url('../img/instagram-light.png');
-}
-
-.theme  .content .social a.youtube {
-	background-image: url('../img/youtube-dark.png');
-}
-
-.theme .background.dark .content .social a.youtube {
-	background-image: url('../img/youtube-light.png');
-}
-
-.theme  .content .social a.tumblr {
-	background-image: url('../img/tumblr-dark.png');
-}
-
-.theme .background.dark .content .social a.tumblr {
-	background-image: url('../img/tumblr-light.png');
+.theme .background.dark .content .social a {
+	color: #fff;
 }
 
 .theme .contact .content form {
@@ -1286,9 +1224,9 @@ html, .theme{
 .home.wrapper {
 	position: absolute !important;
 	z-index: 3 !important;
-	margin-left: -170px;
 	height: 100%;
 	left: 50%;
+	transform: translateX(-50%);
 	padding-top: 10px;
 }
 a {
