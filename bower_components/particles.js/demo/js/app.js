@@ -36,7 +36,7 @@ particlesJS('particles-js', {
     },
     anim: {
       enable: true,
-      speed: 1
+      speed: 4
     }
   },
   interactivity: {
