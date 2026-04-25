@@ -1,0 +1,15 @@
+# Jekyll configuration for GitHub Pages
+# Enable clean URLs without .html extension
+
+# Exclude files from processing
+exclude:
+  - composer.json
+  - composer.lock
+  - Procfile
+  - README.md
+  - .htaccess
+  - index.php
+  - ping.php
+
+# Keep .html extension in URLs by default, but allow override with front matter
+permalink: pretty
